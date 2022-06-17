@@ -1,0 +1,24 @@
+{
+  "background_color": "#182a4c",
+  "description": "Strona Michała Stankiewicz",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "Michał Stankiewicz",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "MStankiewicz",
+  "start_url": "/",
+  "theme_color": "#182a4c",
+  "icons": [
+    {
+      "src": "assets/201x200.png",
+      "type": "image/png",
+      "sizes": "201x200"
+    },
+    {
+      "src": "assets/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
