@@ -1,7 +1,7 @@
 <head>
     <!--PROPERTIES-->
     <link rel="icon" href="assets/fv.png">
-    <title>Kontakt | Michał Stankiewicz</title>
+    <title>Do pobrania | Michał Stankiewicz</title>
     <meta name="description" content="Michał Stankiewicz">
     <meta name="keywords" content="Michał Stankiewicz">
     <meta name="author" content="Michał Stankiewicz">
@@ -13,16 +13,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&familly=Montserrat:wght@900&family=Roboto:wght@400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .frame {
+          border: 2px solid var(--color-gallery);
+          border-radius: 7px;
+          padding: 10px 30px;
+          margin: 10px;
+        }
+        .frame:hover {
+          border: 2px solid var(--color-primary);
+        }
+      </style>
 </head>
 <body>
 <div class="topnav" id="myTopnav">
     <a class="name">Michał Stankiewicz</a>
     <a href="https://www.behance.net/stankiewiczm">Projekty UX/UI</a>
     <a href="grafiki">Grafiki</a>
-    <a href="do-pobrania">Do pobrania</a>
+    <a href="do-pobrania" class="active">Do pobrania</a>
     <a href="opinie">Opinie</a>
     <a href="o">O mnie</a>
-    <a href="kontakt" class="active">Kontakt</a>
+    <a href="kontakt">Kontakt</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -39,11 +50,21 @@
 </div>
 <!--CONTENT-->
 <div class="content">
-  <a>
-    <h2>Adres e-mail: <a class="lnk" href="mailto:kontakt@mstankiewi.cz">kontakt@mstankiewi.cz</a></h2><br>
-    <h2>Messenger: <a class="lnk" href="https://m.me/mstankiewicz.official">m.me/mstankiewicz.official</a></h2><br>
-    <h2><a class="lnk" href="https://stankiewicz.click/discord"><img style="max-width: 350px; min-width: 200px; height: auto;" src="assets/discord.png" height="100px"></a></h2>
-  </a>
+  <div class="frame">
+    <h1>Tapety</h1>
+    <p>Zestawy tapet na Twój komputer.</p>
+    <a href="https://tapety.mstankiewi.cz"><button class="btn_download">Zobacz</button></a>
+  </div>
+  <div class="frame">
+    <h1>BetterTouchTool GPU Switcher</h1>
+    <p>Szybko przełączaj GPU swojego MacBooka Pro z procesorem Intel między trybem dynamicznym, a zintegrowaną kartą graficzną.</p>
+    <a href="BTT-GPU-Switcher"><button class="btn_download">Zobacz</button></a>
+  </div>
+  <div class="frame">
+    <h1>MathBoard</h1>
+    <p>MathBoard to zestaw paneli do Klawiatury dostępności w macOS, który pozwala na szybkie wpisanie równań matematycznych w dokumentach tekstowych.</p>
+    <a><button class="disabled">Wkrótce</button></a>
+  </div>
 </div>
 <!--COPYRIGHT-->
 <div class="copyright"><a class="copyright">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear())</script></a></div>

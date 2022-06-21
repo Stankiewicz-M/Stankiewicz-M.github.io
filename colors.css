@@ -48,6 +48,36 @@ body {
     color: var(--color-primary);
 }
 
+button {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: 1px solid var(--color-primary);
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+button.disabled {
+    background-color: rgb(189, 189, 189);
+    border: 1px solid rgb(189, 189, 189);
+    color: rgb(44, 44, 44);
+    cursor: not-allowed;
+}
+
+button.disabled:hover {
+    background-color: rgb(165, 165, 165);
+    border: 1px solid rgb(165, 165, 165);
+    color: #000;
+}
+
 /* GALLERY */
 div.gallery {
     border: 1px solid var(--color-gallery);

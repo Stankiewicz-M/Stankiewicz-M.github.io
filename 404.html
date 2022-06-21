@@ -1,7 +1,7 @@
 <head>
     <!--PROPERTIES-->
     <link rel="icon" href="assets/fv.png">
-    <title>Kontakt | Michał Stankiewicz</title>
+    <title>Error 404 | Michał Stankiewicz</title>
     <meta name="description" content="Michał Stankiewicz">
     <meta name="keywords" content="Michał Stankiewicz">
     <meta name="author" content="Michał Stankiewicz">
@@ -13,6 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&familly=Montserrat:wght@900&family=Roboto:wght@400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .error404 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          height: 40%;
+        }
+    </style>
 </head>
 <body>
 <div class="topnav" id="myTopnav">
@@ -22,7 +32,7 @@
     <a href="do-pobrania">Do pobrania</a>
     <a href="opinie">Opinie</a>
     <a href="o">O mnie</a>
-    <a href="kontakt" class="active">Kontakt</a>
+    <a href="kontakt">Kontakt</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -37,14 +47,8 @@
 }
 </script>
 </div>
-<!--CONTENT-->
-<div class="content">
-  <a>
-    <h2>Adres e-mail: <a class="lnk" href="mailto:kontakt@mstankiewi.cz">kontakt@mstankiewi.cz</a></h2><br>
-    <h2>Messenger: <a class="lnk" href="https://m.me/mstankiewicz.official">m.me/mstankiewicz.official</a></h2><br>
-    <h2><a class="lnk" href="https://stankiewicz.click/discord"><img style="max-width: 350px; min-width: 200px; height: auto;" src="assets/discord.png" height="100px"></a></h2>
-  </a>
-</div>
 <!--COPYRIGHT-->
-<div class="copyright"><a class="copyright">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear())</script></a></div>
+<a class="copyright-home">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear())</script></a>
+<!--CONTENT-->
+<div class="error404"><img src="assets/error_404.svg" height="100%" onmousedown='return false;' onselectstart='return false;' oncopy="return false" onpaste="return false" oncut="return false"></div>
 </body>

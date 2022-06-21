@@ -126,12 +126,9 @@ h2 {
     font-family: 'Source Code Pro', monospace;
 }
 
-.btn_download {
-    position: absolute;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+.btn_download, button.disabled {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .math_img {
