@@ -160,3 +160,11 @@ v. 22065
 - Added button and disabled button to 'style.css' and 'colors.css'
 - Added titles of sites in '<title>' in all '*.html' files (except 'index.html' and 'uxui.html')
 - Changed MathBoard to 'do-pobrania.html' in the navigation bar
+
+[2022.07.02]
+v. 22071
+- Added alternative text for all images
+- Added 'apple-touch-icon.png' to 'assets'
+- Added '<link rel="apple-touch-icon" ...>' to all '*.html' files
+- Added '<html lang="pl">' to all '*.html' files
+- Added Microsoft Clarity to all '*.html' files

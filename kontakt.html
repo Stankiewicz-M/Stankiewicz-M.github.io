@@ -13,6 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&familly=Montserrat:wght@900&family=Roboto:wght@400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .dc_join {
+        max-width: 350px;
+        min-width: 200px;
+        max-height: 100px;
+        height: max-content;
+      }
+    </style>
 </head>
 <body>
 <div class="topnav" id="myTopnav">
@@ -23,7 +31,7 @@
     <a href="opinie">Opinie</a>
     <a href="o">O mnie</a>
     <a href="kontakt" class="active">Kontakt</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
 <script>
@@ -42,7 +50,7 @@
   <a>
     <h2>Adres e-mail: <a class="lnk" href="mailto:kontakt@mstankiewi.cz">kontakt@mstankiewi.cz</a></h2><br>
     <h2>Messenger: <a class="lnk" href="https://m.me/mstankiewicz.official">m.me/mstankiewicz.official</a></h2><br>
-    <h2><a class="lnk" href="https://stankiewicz.click/discord"><img style="max-width: 350px; min-width: 200px; height: auto;" src="assets/discord.png" height="100px"></a></h2>
+    <h2><a aria-label="Przycisk" class="lnk" href="https://stankiewicz.click/discord"><img alt="Przycisk odsyłający do serwera Discord" class="dc_join" src="assets/discord.png"></a></h2>
   </a>
 </div>
 <!--COPYRIGHT-->

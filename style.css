@@ -4,6 +4,12 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: auto !important;
+    }
+}
+
 ::-webkit-scrollbar {
     visibility: hidden;
 }
