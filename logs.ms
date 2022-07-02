@@ -168,3 +168,6 @@ v. 22071
 - Added '<link rel="apple-touch-icon" ...>' to all '*.html' files
 - Added '<html lang="pl">' to all '*.html' files
 - Added Microsoft Clarity to all '*.html' files
+
+v. 22072
+- Repaired the bug with Microsoft Clarity
