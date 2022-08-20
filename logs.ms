@@ -171,3 +171,7 @@ v. 22071
 
 v. 22072
 - Repaired the bug with Microsoft Clarity
+
+[2022.08.20]
+v. 22081
+- Added MathBoard URL to 'do-pobrania.html'
