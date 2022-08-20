@@ -175,3 +175,6 @@ v. 22072
 [2022.08.20]
 v. 22081
 - Added MathBoard URL to 'do-pobrania.html'
+
+v. 22082
+- Repaired a bug with MathBoard URL
