@@ -178,3 +178,7 @@ v. 22081
 
 v. 22082
 - Repaired a bug with MathBoard URL
+
+[2022.11.09]
+v. 22111
+- Added Mastodon to 'kontakt.html'
