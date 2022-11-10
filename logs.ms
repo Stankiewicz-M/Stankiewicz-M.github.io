@@ -182,3 +182,7 @@ v. 22082
 [2022.11.09]
 v. 22111
 - Added Mastodon to 'kontakt.html'
+
+[2022.11.10]
+v. 22112
+- Added Mastodon verification to 'index.html'
