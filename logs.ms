@@ -186,3 +186,10 @@ v. 22111
 [2022.11.10]
 v. 22112
 - Added Mastodon verification to 'index.html'
+
+[2023.01.20]
+v. 23011
+- Changed 'o.html' to 'o-mnie.html'
+- Changed 'o.html' to 'o-mnie.html' in the navigation bar
+- Added redirection from 'o.html' to 'o-mnie.html'
+- Updated description in 'o-mnie.html'
