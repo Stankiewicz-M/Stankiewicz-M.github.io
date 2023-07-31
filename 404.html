@@ -1,61 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-    <!--PROPERTIES-->
-    <link rel="icon" href="assets/fv.png">
-    <title>Error 404 | Michał Stankiewicz</title>
-    <meta name="description" content="Michał Stankiewicz">
-    <meta name="keywords" content="Michał Stankiewicz">
-    <meta name="author" content="Michał Stankiewicz">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--LINKS AND SCRIPTS-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="colors.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&familly=Montserrat:wght@900&family=Roboto:wght@400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "clcnwkne7a");
-    </script>
-    <style>
-        .error404 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          height: 40%;
-        }
-    </style>
+    <link  type="text/css" rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/touch-icons/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/touch-icons/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/touch-icons/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/touch-icons/apple-touch-icon-ipad-retina-152x152.png">
+    <title>Błąd 404 • Michał Stankiewicz</title>
 </head>
 <body>
-<div class="topnav" id="myTopnav">
-    <a class="name">Michał Stankiewicz</a>
-    <a href="https://www.behance.net/stankiewiczm">Projekty UX/UI</a>
-    <a href="grafiki">Grafiki</a>
-    <a href="do-pobrania">Do pobrania</a>
-    <a href="opinie">Opinie</a>
-    <a href="o-mnie">O mnie</a>
-    <a href="kontakt">Kontakt</a>
-    <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-<script>
-    function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-</div>
-<!--COPYRIGHT-->
-<a class="copyright-home">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear())</script></a>
-<!--CONTENT-->
-<div class="error404"><img alt="ERROR 404: Page not found" src="assets/error_404.svg" height="100%" onmousedown='return false;' onselectstart='return false;' oncopy="return false" onpaste="return false" oncut="return false"></div>
+    <nav class="navbar" id="navbar">
+        <a class="logo"><img src="assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a href="/" id="navStart">Start</a>
+        <a href="/projects"  id="navProjects">Moje projekty</a>
+        <a href="/opinions" id="navOpinions">Opinie</a>
+        <a href="/contact" id="navContact">Kontakt</a>
+        <a href="/about" id="navAbout">O mnie</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <img src="assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        </a>
+    </nav>
+    <div class="background">
+        <div class="content_start">
+            <h1 class="title_start" id="pageNotFound">Nie znaleziono strony.</h1>
+            <h2 class="subtitle_start"><code>dotCZslash404</code></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
 </body>
+</html>

@@ -193,3 +193,9 @@ v. 23011
 - Changed 'o.html' to 'o-mnie.html' in the navigation bar
 - Added redirection from 'o.html' to 'o-mnie.html'
 - Updated description in 'o-mnie.html'
+
+[2023.31.07]
+
+v. 23071
+- Removed old website
+- Created new website

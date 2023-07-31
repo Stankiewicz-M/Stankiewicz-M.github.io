@@ -1,139 +1,41 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-    <!--PROPERTIES-->
-    <meta charset="utf-8">
-    <link rel="icon" href="assets/fv.png">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <title>Michał Stankiewicz</title>
-    <meta name="description" content="Michał Stankiewicz">
-    <meta name="keywords" content="Michał Stankiewicz">
-    <meta name="author" content="Michał Stankiewicz">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--LINKS AND SCRIPTS-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="colors.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&familly=Montserrat:wght@900&family=Roboto:wght@400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <script>navigator.serviceWorker.register("sw.js")</script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="module">import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate'; const el = document.createElement('pwa-update'); document.body.appendChild(el);</script>
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "clcnwkne7a");
-    </script>
+    <link  type="text/css" rel="stylesheet" href="style.css">
+    <link rel="favicon" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/touch-icons/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/touch-icons/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/touch-icons/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/touch-icons/apple-touch-icon-ipad-retina-152x152.png">
+    <title>Michał Stankiewicz</title>
 </head>
-<script
-   src="https://code.jquery.com/jquery-3.6.0.js"
-   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-   crossorigin="anonymous"></script>
 <body>
-<div id="loader-wrapper">
-   <div class="bg-logo"><img alt="Ekran ładowania" id="srcload" src="assets/ani.png" height="100%"></div>
-</div>
-
-<script>
-  document.addEventListener("contextmenu", function(e){
-    e.preventDefault();
-  }, false);
-</script>
-
-<style>
-.load {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-}
-
-.load hr {
-    border: 0;
-    margin: 0;
-    width: 40%;
-    height: 40%;
-    position: absolute;
-    border-radius: 50%;
-    animation: spin 2s ease infinite;
-}
-
-.bg-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    height: 30%;
-}
-
-@keyframes spin {
-    0%, 100% {
-        transform: translate(0)
-    }
-    25% {
-        transform: translate(160%)
-    }
-    50% {
-        transform: translate(160%, 160%)
-    }
-    75% {
-        transform: translate(0, 160%)
-    }
-}
-
-#loader-wrapper {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: rgb(18, 18, 18);
-}
-</style>
-<script>
-$(window).on('load', function() { 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-   setTimeout(
-    function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-     $(".srcload").fadeOut();
-     $("#loader-wrapper").fadeOut();
-     $("body").css({"overflow":"visible"});
-     }, 3000);
-  });
-</script>
-<div class="topnav" id="myTopnav">
-    <a class="name">Michał Stankiewicz</a>
-    <a href="https://www.behance.net/stankiewiczm">Projekty UX/UI</a>
-    <a href="grafiki">Grafiki</a>
-    <a href="do-pobrania">Do pobrania</a>
-    <a href="opinie">Opinie</a>
-    <a href="o-mnie">O mnie</a>
-    <a href="kontakt">Kontakt</a>
-    <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-<script>
-    function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-</div>
-<!--COPYRIGHT-->
-<a class="copyright-home">&copy; Michał Stankiewicz <script>document.write(new Date().getFullYear())</script></a>
-<!--CONTENT-->
-<div class="bg-logo"><img alt="Logo Michała Stankiewicza" src="assets/ani.png" height="100%"></div>
-<a rel="me" href="https://pol.social/@mstankiewicz" style="visibility: hidden">Mastodon</a>
+    <nav class="navbar" id="navbar">
+        <a class="logo"><img src="assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a href="/" class="active" id="navStart">Start</a>
+        <a href="/projects"  id="navProjects">Moje projekty</a>
+        <a href="/opinions" id="navOpinions">Opinie</a>
+        <a href="/contact" id="navContact">Kontakt</a>
+        <a href="/about" id="navAbout">O mnie</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <img src="assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        </a>
+    </nav>
+    <div class="background">
+        <div class="content_start">
+            <img src="assets/logo/logo_color.svg" alt="logo" class="logo-big">
+            <h1 class="title_start" id="titleStart">Michał Stankiewicz</h1>
+            <h2 class="subtitle_start" id="subtitleStart">UX | UI | Grafiki</h2>
+        </div>
+    </div>
+    <div class="verify">
+        <a rel="me" href="https://pol.social/@mstankiewicz">Mastodon</a>
+        <a rel="me" href="https://pol.social/@miersetnik">Mastodon</a>
+        <a rel="me" href="https://pol.social/@mastopolstats">Mastodon</a>
+    </div>
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
 </body>
 </html>
