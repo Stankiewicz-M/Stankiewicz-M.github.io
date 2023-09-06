@@ -195,7 +195,16 @@ v. 23011
 - Updated description in 'o-mnie.html'
 
 [2023.31.07]
-
 v. 23071
 - Removed old website
 - Created new website
+
+[2023.08.21]
+v. 23081
+
+[2023.09.06]
+v. 23091
++ Added 'robots.txt'
+- Updated 'svms-ext.html'
+- Removed 'svms.html'
+- Removed preview of 'svms.html'
