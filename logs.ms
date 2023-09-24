@@ -204,7 +204,11 @@ v. 23081
 
 [2023.09.06]
 v. 23091
-+ Added 'robots.txt'
+- Added 'robots.txt'
 - Updated 'svms-ext.html'
 - Removed 'svms.html'
 - Removed preview of 'svms.html'
+
+[2023.09.24]
+v. 23092
+- Repaired a bug with favicon in 'about.html', 'contact.html', 'index.html', 'license.html', 'opinions.html' and 'podcast.html'
