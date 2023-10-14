@@ -489,6 +489,17 @@ header .header-image * {
     max-width: 1000px !important;
 }
 
+.aboutImage {
+    width: 200px;
+    height: 200px;
+    background-image: url(/assets/photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
 footer {
     position: relative;
     bottom: 0;
@@ -502,6 +513,47 @@ footer {
     border-radius: 32px 32px 0 0;
     width: 100%;
     margin-top: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 32px;
+    list-style-type: none;
+}
+
+.grid-item {
+    background-color: var(--color-nav-support);
+    text-decoration: none;
+    border-radius: 16px;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: balance;
+    height: 100px;
+    padding: 0 16px;
+    box-shadow: #00000054 0px 4px 8px 0px;
+}
+
+.grid-item:hover {
+    background-color: var(--color-accent-hover);
+    box-shadow: #00000054 0px 2px 16px 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        gap: 16px;
+    }
 }
 
 @media screen and (max-width: 770px) {

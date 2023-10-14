@@ -212,3 +212,7 @@ v. 23091
 [2023.09.24]
 v. 23092
 - Repaired a bug with favicon in 'about.html', 'contact.html', 'index.html', 'license.html', 'opinions.html' and 'podcast.html'
+
+[2023.10.14]
+v. 23101
+- Updated 'about.html'
