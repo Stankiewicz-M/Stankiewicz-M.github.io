@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  type="text/css" rel="stylesheet" href="../style.css">
     <link rel="icon" href="../../assets/favicon.png">
-    <meta http-equiv="refresh" content="0; url='../#graphics'  />
     <title>Projekty • Michał Stankiewicz</title>
 </head>
+<body>
+    <script>
+        var currentURL = window.location.href;
+        var language = window.navigator.language;
+        if (language.startsWith('pl')) {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/pl" + restOfUrl;
+            window.location.replace(newURL);
+        } else {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/en" + restOfUrl;
+            window.location.replace(newURL);
+        }
+    </script>
+</body>
 </html>

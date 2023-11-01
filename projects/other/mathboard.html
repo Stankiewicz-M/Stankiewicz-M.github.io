@@ -12,45 +12,20 @@
     <title>MathBoard • Michał Stankiewicz</title>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
-        <a href="../../" id="navStart">Start</a>
-        <a href="../../projects" class="active"  id="navProjects">Moje projekty</a>
-        <a href="../../opinions" id="navOpinions">Opinie</a>
-        <a href="../../contact" id="navContact">Kontakt</a>
-        <a href="../../about" id="navAbout">O mnie</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
-        </a>
-    </nav>
-    <div class="content">
-            <a href="../../projects"><button class="back-button">Wstecz</button></a>
-        <br>
-        <br>
-        <br>
-        <header>
-            <div class="header-content">
-                <div class="header-image">
-                    <div class="slideshow-container">
-                        <div class="images-slides">
-                            <img src="../../assets/projects/other/mathboard/preview.webp" style="width:100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="header-text">
-                    <h1 class="title" id="otherMathBoardTitle">MathBoard</h1>
-                    <p class="description" id="otherMathBoardDescription">MathBoard to zestaw paneli do Klawiatury dostępności w systemie macOS, który pozwala na szybkie wpisanie różnych równań matematycznych w dokumentach programu Microsoft Word.<br>
-                        "macOS" jest znakiem towarowym firmy Apple Inc. "Microsoft Word" jest znakiem towarowym firmy Microsoft Corporation.</p>
-                    <a href="https://www.mstankiewi.cz/MathBoard/download/mathboard_22081.dmg"><button id="download">Pobierz</button></a>
-                </div>
-            </div>
-        </header>
-</div>
-<footer>
-            <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
-            <p><a href="../../licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
-        </footer>
-    <script src="../../script.js"></script>
-    <script src="../../lang.js"></script>
+    <script>
+        var currentURL = window.location.href;
+        var language = window.navigator.language;
+        if (language.startsWith('pl')) {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/pl" + restOfUrl;
+            window.location.replace(newURL);
+        } else {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/en" + restOfUrl;
+            window.location.replace(newURL);
+        }
+    </script>
 </body>
 </html>

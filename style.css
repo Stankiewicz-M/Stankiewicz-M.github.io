@@ -13,11 +13,11 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-background: #1b1b1b;
-        --color-accent: #5a8cf0;
-        --color-accent-hover: #799de5;
+        --color-accent: #7ba5fa;
+        --color-accent-hover: #a4bef2;
         --color-text: #efefef;
         --color-text-sec: #cbcbcb;
-        --color-nav: #252525a6;
+        --color-nav: #202020ba;
         --color-nav-support: #252525;
     }
 }
@@ -230,14 +230,53 @@ nav a:last-child {
     color: #ffffff;
 }
 
+.verify {
+    display: none;
+}
+
+.changeLanguageStart {
+    display: flex;
+    position: fixed;
+    border-radius: 32px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-nav);
+    box-shadow: #00000054 0px 4px 16px 0px;
+    margin: 16px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(calc(-50% - 16px));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    padding: 0 8px;
+}
+
+.changeLanguageStart a {
+    color: var(--color-accent);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 32px;
+    transition: background-color 0.2s ease-in-out;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.changeLanguageStart a:hover {
+    background-color: var(--color-background);
+    color: var(--color-accent-hover);
+    box-shadow: #00000054 0px 4px 16px 0px;
+}
+
 @media screen and (max-width: 770px) {
     .logo-big {
         width: 128px;
     }
-}
 
-.verify {
-    display: none;
+    .changeLanguageStart {
+        top: 20px;
+        bottom: unset;
+    }
 }
     
 /* CONTENT START - end */
@@ -513,6 +552,11 @@ footer {
     border-radius: 32px 32px 0 0;
     width: 100%;
     margin-top: auto;
+}
+
+#changeLanguage {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .grid-container {

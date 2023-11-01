@@ -12,41 +12,20 @@
     <title>Kontakt • Michał Stankiewicz</title>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
-        <a href="../" id="navStart">Start</a>
-        <a href="/projects"  id="navProjects">Moje projekty</a>
-        <a href="../opinions" id="navOpinions">Opinie</a>
-        <a href="../contact" class="active" id="navContact">Kontakt</a>
-        <a href="../about" id="navAbout">O mnie</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
-        </a>
-    </nav>
-    <div class="content only-text">
-        <h1 class="title" id="contactTitle">Kontakt</h1>
-        <br>
-        <h2 class="subtitle" id="contactSubtitle">Masz pytania? Napisz do mnie!</h2>
-        <br>
-        <p id="contactSocialMedia">Jeśli masz jakieś pytania, chcesz się ze mną skontaktować, lub po prostu pogadać, napisz do mnie. Postaram się odpowiedzieć jak najszybciej.</p>
-        <br>
-        <div class="buttons">
-            <a href="https://matrix.to/#/%23mstankiewicz:pol.social"><button>Matrix</button></a>
-            <a href="https://pol.social/@mstankiewicz"><button>Mastodon</button></a>
-            <a href="https://m.me/mstankiewicz.official"><button>Messenger</button></a>
-        </div>
-        <br>
-        <p id="contactMail">Możesz też wysłać maila:</p>
-        <form action="javascript:location.href=('mail' + 'to' + ':kontakt' + '@mstankiewi.cz')">
-            <button>Mail</button>
-        </form>
-        <p id="contactMailDescription">kontakt (%$#) mstankiewi.cz - w miejscu <code>(%$#)</code> wstaw symbol <code>@</code> (wiesz, zabezpieczenia przeciw botom 😉).</p>
-    </div>
-    <footer>
-        <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
-        <p><a href="../licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
-    </footer>
-    <script src="../script.js"></script>
-    <script src="../lang.js"></script>
+    <script>
+        var currentURL = window.location.href;
+        var language = window.navigator.language;
+        if (language.startsWith('pl')) {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/pl" + restOfUrl;
+            window.location.replace(newURL);
+        } else {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/en" + restOfUrl;
+            window.location.replace(newURL);
+        }
+    </script>
 </body>
 </html>

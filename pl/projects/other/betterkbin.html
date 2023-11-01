@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  type="text/css" rel="stylesheet" href="../../../style.css">
+    <link rel="icon" href="../../../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../../../assets/touch-icons/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../assets/touch-icons/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/touch-icons/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../assets/touch-icons/apple-touch-icon-ipad-retina-152x152.png">
+    <title>Better /kbin • Michał Stankiewicz</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a href="/pl/" id="navStart">Start</a>
+        <a href="/pl/projects" class="active"  id="navProjects">Moje projekty</a>
+        <a href="/pl/opinions" id="navOpinions">Opinie</a>
+        <a href="/pl/contact" id="navContact">Kontakt</a>
+        <a href="/pl/about" id="navAbout">O mnie</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        </a>
+    </nav>
+    <div class="content">
+            <a href="../../../projects"><button class="back-button">Wstecz</button></a>
+        <br>
+        <br>
+        <br>
+        <header>
+            <div class="header-content">
+                <div class="header-image">
+                    <div class="slideshow-container">
+                        <div class="images-slides">
+                            <img src="../../../assets/projects/other/betterkbin/preview.webp" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="header-text">
+                    <h1 class="title" id="otherBetterKbinTitle">Better /kbin</h1>
+                    <p class="description" id="otherBetterKbinDescription">Pierwotnym założeniem rozszerzenia Better /kbin było proste udostępnianie dowolnej strony internetowej do instancji <a href="https://karab.in/">karab.in</a> serwisu <a href="https://kbin.pub">/kbin</a>. Obecnie rozszerzenie daje wiele funkcji, takich jak automatyczną zmianę motywu, której w serwisie brakuje, oraz oferuje wsparcie dla innych instancji /kbin.</p>
+                    <a href="https://chrome.google.com/webstore/detail/lhjckkbpebkjgjmlcladdmcabkgkffkp"><button id="downloadCWS">Pobierz z Chrome Web Store</button></a>
+                    <a href="https://addons.mozilla.org/addon/better-kbin"><button id="downloadMA">Pobierz z Mozilla Add-ons</button></a>
+                </div>
+            </div>
+        </header>
+</div>
+<footer>
+            <p><a target="_blank" id="changeLanguage" onclick="changeLanguageAndOpen()">Switch to 🇺🇸 English (US)</a></p>
+            <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
+            <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
+        </footer>
+    <script src="../../../script.js"></script>
+    <script src="../../../lang.js"></script>
+</body>
+</html>

@@ -29,3 +29,16 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+function changeLanguageAndOpen() {
+    var currentUrl = window.location.href;
+    if (currentUrl.includes('/pl')) {
+        var newUrl = currentUrl.replace('/pl', '/en');
+        window.open(newUrl, '_self');
+    } else if (currentUrl.includes('/en')) {
+        var newUrl = currentUrl.replace('/en', '/pl');
+        window.open(newUrl, '_self');
+    } else {
+        console.log("Adres URL nie zawiera ani '/pl' ani '/en'");
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  type="text/css" rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/touch-icons/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/touch-icons/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/touch-icons/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/touch-icons/apple-touch-icon-ipad-retina-152x152.png">
+    <title>O mnie • Michał Stankiewicz</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a class="logo"><img src="../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a href="/pl" id="navStart">Start</a>
+        <a href="/pl/projects"  id="navProjects">Moje projekty</a>
+        <a href="/pl/opinions" id="navOpinions">Opinie</a>
+        <a href="/pl/contact" id="navContact">Kontakt</a>
+        <a href="/pl/about" class="active" id="navAbout">O mnie</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <img src="../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        </a>
+    </nav>
+    <div class="content only-text">
+        <h1 class="title" id="aboutTitle">O mnie</h1>
+        <br>
+        <div class="aboutImage" id="aboutImage"></div>
+        <br>
+        <h2 class="subtitle" id="aboutSubtitle">Nazywam się Michał Stankiewicz.</h2>
+        <p id="aboutDescription1">Jestem studentem <a href="https://www.wsb-nlu.edu.pl/pl/informatyka">Wyższej Szkoły Biznesu - National Louis University w Nowym Sączu</a> na Wydziale Nauk Społecznych i Informatyki, a wkrótce będę uczęszczał na specjalizację "Cyberbezpieczeństwo". Docelowo chciałbym zajmować się administracją systemami informatycznymi oraz weryfikacją dostępności oprogramowania pod kątem osób z niepełnosprawnościami.</p>
+        <p id="aboutDescription2">Prywatnie interesuję się grami planszowymi i komputerowymi, grafiką komputerową oraz nowoczesnymi technologiami, takimi jak inteligentny dom. Lubię też projektować interfejsy użytkownika w aplikacjach oraz systemach operacyjnych.</p>
+        <h2 class="subtitle" id="aboutSubtitle2">Moje umiejętności</h2>
+        <div class="grid-container">
+            <li class="grid-item">grafika wektorowa</li>
+            <li class="grid-item">znajomość oprogramowania Adobe, w tym Figma oraz Xd</li>
+            <li class="grid-item">znajomość oprogramowania Serif Affinity</li>
+            <li class="grid-item">zaawansowana znajomość systemów iOS oraz macOS</li>
+            <li class="grid-item">znajomość popularnych systemów Linux</li>
+            <li class="grid-item">podstawowa znajomość zasad cyberbezpieczeństwa</li>
+            <li class="grid-item">podstawy OSINT-u</li>
+            <li class="grid-item">administracja Microsoft 365</li>
+            <li class="grid-item">zaawansowana znajomość pakietu Microsoft 365</li>
+            <li class="grid-item">tworzenie stron internetowych w HTML i CSS oraz Wordpress</li>
+            <li class="grid-item">zarządzanie mediami społecznościowymi</li>
+            <li class="grid-item">średniozaawansowana znajomość j. angielskiego</li>
+        </div>
+    </div>
+    <footer>
+        <p><a target="_blank" id="changeLanguage" onclick="changeLanguageAndOpen()">Switch to 🇺🇸 English (US)</a></p>
+        <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
+        <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
+    </footer>
+    <script src="../script.js"></script>
+    
+</body>
+</html>

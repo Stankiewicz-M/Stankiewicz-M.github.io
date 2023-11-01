@@ -8,11 +8,20 @@
     <title>Podcast • Michał Stankiewicz</title>
 </head>
 <body>
-    <h1 class="title">Przekierowywanie...</h1>
-    <h2 class="subtitle">Za chwilę zostaniesz przekierowany na stronę podcastu.</h2>
-    <h2 class="subtitle">Jeśli nie chcesz czekać lub strona się nie ładuje, kliknij <a href="/projects/other/podcast">tutaj</a>.</h2>
     <script>
-        window.location.replace("/projects/other/podcast");
+        var currentURL = window.location.href;
+        var language = window.navigator.language;
+        if (language.startsWith('pl')) {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/pl" + restOfUrl;
+            window.location.replace(newURL);
+        } else {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/en" + restOfUrl;
+            window.location.replace(newURL);
+        }
     </script>
 </body>
 </html>

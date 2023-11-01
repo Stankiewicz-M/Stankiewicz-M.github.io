@@ -216,3 +216,7 @@ v. 23092
 [2023.10.14]
 v. 23101
 - Updated 'about.html'
+
+[2023.11.01]
+v. 23111
+- Added english version of the website
