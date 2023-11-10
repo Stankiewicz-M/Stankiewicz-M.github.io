@@ -224,3 +224,6 @@ v. 23111
 [2023.11.10]
 v. 23112
 - Added new 'robots.txt'
+
+v. 23113
+- Added 'sitemap.xml'
