@@ -220,3 +220,7 @@ v. 23101
 [2023.11.01]
 v. 23111
 - Added english version of the website
+
+[2023.11.10]
+v. 23112
+- Added new 'robots.txt'
