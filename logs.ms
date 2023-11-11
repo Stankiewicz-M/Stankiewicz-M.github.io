@@ -233,3 +233,6 @@ v. 23114
 - Added Open Graph to all '*.html' files
 - Added graphics to use in Open Graph
 - Fixed typos
+
+v. 23115
+- Fixed Open Graph graphics URLs
