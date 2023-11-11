@@ -227,3 +227,9 @@ v. 23112
 
 v. 23113
 - Added 'sitemap.xml'
+
+[2023.11.11]
+v. 23114
+- Added Open Graph to all '*.html' files
+- Added graphics to use in Open Graph
+- Fixed typos
