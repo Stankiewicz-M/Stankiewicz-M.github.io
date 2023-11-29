@@ -554,9 +554,14 @@ footer {
     margin-top: auto;
 }
 
-#changeLanguage {
-    text-decoration: underline;
+.footerSocial, .footerLanguage {
+    color: var(--color-text-sec);
+    text-decoration: none;
+    border-radius: 4px;
     cursor: pointer;
+    padding: 4px 10px;
+    background-color: var(--color-nav-support);
+    transition: background-color 0.2s ease-in-out;
 }
 
 .grid-container {

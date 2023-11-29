@@ -236,3 +236,8 @@ v. 23114
 
 v. 23115
 - Fixed Open Graph graphics URLs
+
+[2023.11.29]
+v. 23116
+- Added link to social medias in footer
+- Changed footer's links style
