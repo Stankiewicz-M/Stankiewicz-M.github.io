@@ -241,3 +241,8 @@ v. 23115
 v. 23116
 - Added link to social medias in footer
 - Changed footer's links style
+
+[2023.12.01]
+v. 23121
+- Updated links to extension stores in 'betterkbin.html'
+- Updated favicon
