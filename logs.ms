@@ -246,3 +246,7 @@ v. 23116
 v. 23121
 - Updated links to extension stores in 'betterkbin.html'
 - Updated favicon
+
+[2024.01.01]
+v. 24011
+- Updated price of The Glassballs wallpapers set
