@@ -17,18 +17,18 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/pl/" id="navStart">Start</a>
-        <a href="/pl/projects" class="active"  id="navProjects">Moje projekty</a>
+        <a href="/pl/projects" class="active" tabindex="-1" id="navProjects">Moje projekty</a>
         <a href="/pl/opinions" id="navOpinions">Opinie</a>
         <a href="/pl/contact" id="navContact">Kontakt</a>
         <a href="/pl/about" id="navAbout">O mnie</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
     <div class="content">
-            <a href="../../../projects"><button class="back-button">Wstecz</button></a>
+            <a href="../../../projects" tabindex="-1"><button class="back-button">Wstecz</button></a>
         <br>
         <br>
         <br>
@@ -37,20 +37,20 @@
                 <div class="header-image">
                     <div class="slideshow-container">
                         <div class="images-slides">
-                            <img src="../../../assets/projects/websites/essasoft/preview.webp" style="width:100%">
+                            <img src="../../../assets/projects/websites/essasoft/preview.webp" style="width:100%" alt="Strona internetowa EssaSoft z listą popularnego oprogramowania.">
                         </div>
                     </div>
                 </div>
                 <div class="header-text">
                     <h1 class="title" id="websitesEssaSoftTitle">EssaSoft</h1>
                     <p class="description" id="websitesEssaSoftDescription">Założyłem stronę SEssaSoft, aby każdy mógł pobrać swoje ulubione oprogramowanie na komputer bez zbędnego przeglądania stron internetowych twórców. Strona zawiera linki bezpośrednio do instalatorów udostępnianych przez ich wydawców, dzięki czemu mamy gwarancję, że aplikacja nie została zmodyfikowana przez osoby trzecie.</p>
-                    <a href="https://essasoft.mstankiewi.cz/"><button id="visitWebsite">Odwiedź stronę</button></a>
+                    <a href="https://essasoft.mstankiewi.cz/" tabindex="-1"><button id="visitWebsite">Odwiedź stronę</button></a>
                 </div>
             </div>
         </header>
 </div>
 <footer>
-        <p><p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()">Switch to 🇺🇸 English (US)</a></p>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
         <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Media społecznościowe</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>

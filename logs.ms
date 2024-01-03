@@ -250,3 +250,8 @@ v. 23121
 [2024.01.01]
 v. 24011
 - Updated price of The Glassballs wallpapers set
+
+[2024.01.03]
+v. 24012
+- Added alternative text for all images
+- Improved accessibility

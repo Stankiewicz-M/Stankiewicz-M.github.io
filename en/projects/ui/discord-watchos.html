@@ -17,18 +17,18 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/en/" id="navStart">Start</a>
-        <a href="/en/projects" class="active"  id="navProjects">My projects</a>
+        <a href="/en/projects" class="active" tabindex="-1" id="navProjects">My projects</a>
         <a href="/en/opinions" id="navOpinions">Opinions</a>
         <a href="/en/contact" id="navContact">Contact</a>
         <a href="/en/about" id="navAbout">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
     <div class="content">
-            <a href="/en/projects"><button class="back-button">Back</button></a>
+            <a href="/en/projects" tabindex="-1"><button class="back-button">Back</button></a>
         <br>
         <br>
         <br>
@@ -37,13 +37,13 @@
                 <div class="header-image">
                     <div class="slideshow-container">
                         <div class="images-slides">
-                        <img src="../../../assets/projects/ui/discord-watchos/preview.webp" style="width:100%">
+                        <img src="../../../assets/projects/ui/discord-watchos/preview.webp" style="width:100%" alt="Concept of Discord app for Apple Watch.">
                         </div>
                         <div class="images-slides">
-                        <img src="../../../assets/projects/ui/discord-watchos/screens.webp" style="width:100%">
+                        <img src="../../../assets/projects/ui/discord-watchos/screens.webp" style="width:100%" alt="Smartwatch displaying four screens of messenger - server list, channel list text chat and voice chat.">
                         </div>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)" aria-label="Previous image">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)" aria-label="Next image">&#10095;</a>
                     </div>
                 </div>
                 <div class="header-text">
@@ -54,7 +54,7 @@
         </header>
 </div>
 <footer>
-        <p><p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()">Przełącz na 🇵🇱 polski</a></p>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Przełącz na 🇵🇱 polski</a></p>
         <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Social Media [PL]</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/en/licence" class="footerTerms">Terms of use and copyrights</a></p>

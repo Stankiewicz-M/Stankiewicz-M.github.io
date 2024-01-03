@@ -17,18 +17,18 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/en/" id="navStart">Start</a>
-        <a href="/en/projects" class="active"  id="navProjects">My projects</a>
+        <a href="/en/projects" class="active" tabindex="-1" id="navProjects">My projects</a>
         <a href="/en/opinions" id="navOpinions">Opinions</a>
         <a href="/en/contact" id="navContact">Contact</a>
         <a href="/en/about" id="navAbout">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
     <div class="content">
-            <a href="/en/projects"><button class="back-button">Back</button></a>
+            <a href="/en/projects" tabindex="-1"><button class="back-button">Back</button></a>
         <br>
         <br>
         <br>
@@ -37,52 +37,52 @@
                 <div class="header-image">
                     <div class="slideshow-container">
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/preview.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/preview.webp" style="width:100%" alt="A billboard with The Backrooms wallpaper set.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/1.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/1.webp" style="width:100%" alt="Metal sphere and cube in purple light.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/2.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/2.webp" style="width:100%" alt="A glass sphere and geometric shapes on a shelf in blue light.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/3.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/3.webp" style="width:100%" alt="A glass ball on the staircase against a light-colored wall.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/4.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/4.webp" style="width:100%" alt="A glass sphere suspended from a ceiling light.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/5.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/5.webp" style="width:100%" alt="A glass sphere on blocks in a red light.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/6.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/6.webp" style="width:100%" alt="Sphere and cube in blue light.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/7.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/7.webp" style="width:100%" alt="Cubes and spheres in yellow light.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/8.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/8.webp" style="width:100%" alt="A sphere on a cube on a pink background.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/thebackrooms/9.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/thebackrooms/9.webp" style="width:100%" alt="A sphere on green tiles.">
                         </div>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)" aria-label="Previous image">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)" aria-label="Next image">&#10095;</a>
                     </div>
                 </div>
                 <div class="header-text">
                     <h1 class="title" id="graphicsTheBackroomsTitle">The Backrooms - a wallpaper set</h1>
                     <p class="description" id="graphicsTheBackroomsDescription"></p>
-                    <a href="https://www.dropbox.com/s/9yja1rxjbcet6by/The%20Backrooms%2016-9.zip?dl=1"><button id="downloadZip169">Download zip (16:9)</button></a>
-                    <a href="https://www.dropbox.com/s/jv19mkdat1yjg30/The%20Backrooms%2016-10.zip?dl=1"><button id="downloadZip1610">Download zip (16:10)</button></a>
-                    <a href="https://www.dropbox.com/s/l4x26166nd2eie7/The%20Backrooms%204-3.zip?dl=1"><button id="downloadZip43">Download zip (4:3)</button></a>
-                    <a href="/projects/graphics/thebackrooms-mobile"><button id="downloadMobileEdition">Mobile Edition</button></a>
+                    <a href="https://www.dropbox.com/s/9yja1rxjbcet6by/The%20Backrooms%2016-9.zip?dl=1" tabindex="-1"><button id="downloadZip169">Download zip (16:9)</button></a>
+                    <a href="https://www.dropbox.com/s/jv19mkdat1yjg30/The%20Backrooms%2016-10.zip?dl=1" tabindex="-1"><button id="downloadZip1610">Download zip (16:10)</button></a>
+                    <a href="https://www.dropbox.com/s/l4x26166nd2eie7/The%20Backrooms%204-3.zip?dl=1" tabindex="-1"><button id="downloadZip43">Download zip (4:3)</button></a>
+                    <a href="/projects/graphics/thebackrooms-mobile" tabindex="-1"><button id="downloadMobileEdition">Mobile Edition</button></a>
                 </div>
             </div>
         </header>
         </div>
     <footer>
-        <p><p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()">Przełącz na 🇵🇱 polski</a></p>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Przełącz na 🇵🇱 polski</a></p>
         <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Social Media [PL]</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/en/licence" class="footerTerms">Terms of use and copyrights</a></p>

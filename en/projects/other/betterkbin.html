@@ -17,18 +17,18 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/en/" id="navStart">Start</a>
-        <a href="/en/projects" class="active"  id="navProjects">My projects</a>
+        <a href="/en/projects" class="active" tabindex="-1" id="navProjects">My projects</a>
         <a href="/en/opinions" id="navOpinions">Opinions</a>
         <a href="/en/contact" id="navContact">Contact</a>
         <a href="/en/about" id="navAbout">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
     <div class="content">
-            <a href="/en/projects"><button class="back-button">Back</button></a>
+            <a href="/en/projects" tabindex="-1"><button class="back-button">Back</button></a>
         <br>
         <br>
         <br>
@@ -37,16 +37,16 @@
                 <div class="header-image">
                     <div class="slideshow-container">
                         <div class="images-slides">
-                            <img src="../../../assets/projects/other/betterkbin/preview.webp" style="width:100%">
+                            <img src="../../../assets/projects/other/betterkbin/preview.webp" style="width:100%" alt="Poster of the Better /kbin browser extension.">
                         </div>
                     </div>
                 </div>
                 <div class="header-text">
                     <h1 class="title" id="otherBetterKbinTitle">Better /kbin</h1>
                     <p class="description" id="otherBetterKbinDescription">The original idea of the Better /kbin extension was to make sharing on <a href="https://karab.in/">karab.in</a> (instance of the <a href="https://kbin.pub">/kbin</a> service) easier. Now the extension has many features such as automatic theme change, which the service lacks, and offers support for other /kbin instances.</p>
-                    <a href="https://chrome.google.com/webstore/detail/lhjckkbpebkjgjmlcladdmcabkgkffkp"><button id="downloadCWS">Download from Chrome Web Store</button></a>
-                    <a href="https://addons.mozilla.org/addon/better-kbin"><button id="downloadMA">Download from Mozilla Add-ons</button></a>
-                    <a href="https://microsoftedge.microsoft.com/addons/detail/ackoiabiafbmmeknggaoaicibeejbkfl"><button id="downloadMSA">Download from Microsoft Edge Add-ons</button></a>
+                    <a href="https://chrome.google.com/webstore/detail/lhjckkbpebkjgjmlcladdmcabkgkffkp" tabindex="-1"><button id="downloadCWS">Download from Chrome Web Store</button></a>
+                    <a href="https://addons.mozilla.org/addon/better-kbin" tabindex="-1"><button id="downloadMA">Download from Mozilla Add-ons</button></a>
+                    <a href="https://microsoftedge.microsoft.com/addons/detail/ackoiabiafbmmeknggaoaicibeejbkfl" tabindex="-1"><button id="downloadMSA">Download from Microsoft Edge Add-ons</button></a>
                 </div>
             </div>
         </header>

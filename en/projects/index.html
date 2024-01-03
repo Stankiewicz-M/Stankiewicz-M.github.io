@@ -16,11 +16,11 @@
     <nav class="navbar" id="navbar">
         <a class="logo"><img src="../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
         <a href="/en/" id="navStart">Start</a>
-        <a href="/en/projects" class="active"  id="navProjects">My projects</a>
+        <a href="/en/projects" class="active" tabindex="-1" id="navProjects">My projects</a>
         <a href="/en/opinions" id="navOpinions">Opinions</a>
         <a href="/en/contact" id="navContact">Contact</a>
         <a href="/en/about" id="navAbout">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
             <img src="../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
         </a>
     </nav>
@@ -28,49 +28,49 @@
         <h1 class="title" id="projectsTitle">My projects</h1>
         <br>
         <div class="buttons">
-            <a href="#projectsUI"><button>UI designs</button></a>
-            <a href="#projectsGraphics"><button>3D projects</button></a>
-            <a href="#projectsWebsites"><button>Websites</button></a>
-            <a href="#projectsOther"><button>Other</button></a>
+            <a href="#projectsUI" tabindex="-1"><button>UI designs</button></a>
+            <a href="#projectsGraphics" tabindex="-1"><button>3D projects</button></a>
+            <a href="#projectsWebsites" tabindex="-1"><button>Websites</button></a>
+            <a href="#projectsOther" tabindex="-1"><button>Other</button></a>
         </div>
         <br>
         <br>
         <br>
         <h2 class="subtitle" id="projectsUI">UI designs</h2>
         <div class="buttons">
-            <a href="/en/projects/ui/discord-watchos"><img src="../../assets/projects/ui/discord-watchos/preview.webp" class="project"></a>
-            <a href="/en/projects/ui/shcenter"><img src="../../assets/projects/ui/SHCenter/preview.webp" class="project"></a>
+            <a href="/en/projects/ui/discord-watchos"><img src="../../assets/projects/ui/discord-watchos/preview.webp" class="project" alt="Concept of Discord app for Apple Watch."></a>
+            <a href="/en/projects/ui/shcenter"><img src="../../assets/projects/ui/SHCenter/preview.webp" class="project" alt="Concept of the SHCenter app for the Apple Watch."></a>
         </div>
         <br>
         <br>
         <br>
         <h2 class="subtitle" id="projectsGraphics">3D projects</h2>
         <div class="buttons">
-            <a href="/en/projects/graphics/theglassballs"><img src="../../assets/projects/graphics/theglassballs/preview.webp" class="project"></a>
-            <a href="/en/projects/graphics/thebackrooms"><img src="../../assets/projects/graphics/thebackrooms/preview.webp" class="project"></a>
-            <a href="/en/projects/graphics/lights"><img src="../../assets/projects/graphics/lights/preview.webp" class="project"></a>
+            <a href="/en/projects/graphics/theglassballs"><img src="../../assets/projects/graphics/theglassballs/preview.webp" class="project" alt="The Glassballs wallpaper set."></a>
+            <a href="/en/projects/graphics/thebackrooms"><img src="../../assets/projects/graphics/thebackrooms/preview.webp" class="project" alt="The Backrooms wallpaper set."></a>
+            <a href="/en/projects/graphics/lights"><img src="../../assets/projects/graphics/lights/preview.webp" class="project" alt="Lights wallpaper set."></a>
         </div>
         <br>
         <br>
         <br>
         <h2 class="subtitle" id="projectsWebsites">Websites</h2>
         <div class="buttons">
-            <a href="/en/projects/websites/essasoft"><img src="../../assets/projects/websites/essasoft/preview.webp" class="project"></a>
+            <a href="/en/projects/websites/essasoft"><img src="../../assets/projects/websites/essasoft/preview.webp" class="project" alt="EssaSoft"></a>
         </div>
         <br>
         <br>
         <br>
         <h2 class="subtitle" id="projectsOther">Other</h2>
         <div class="buttons">
-            <a href="/en/projects/other/betterkbin"><img src="../../assets/projects/other/betterkbin/preview.webp" class="project"></a>
-            <a href="/en/projects/other/svms-ext"><img src="../../assets/projects/other/svms/preview.webp" class="project"></a>
-            <a href="/en/projects/other/podcast"><img src="../../assets/projects/other/podcast/preview.webp" class="project"></a>
-            <a href="/en/projects/other/mathboard"><img src="../../assets/projects/other/mathboard/preview.webp" class="project"></a>
-            <a href="/en/projects/other/btt-gpu-switcher"><img src="../../assets/projects/other/btt-gpu-switcher/preview.webp" class="project"></a>
+            <a href="/en/projects/other/betterkbin"><img src="../../assets/projects/other/betterkbin/preview.webp" class="project" alt="Better /kbin browser extension."></a>
+            <a href="/en/projects/other/svms-ext"><img src="../../assets/projects/other/svms/preview.webp" class="project" alt="SVMS New Tab and Search Engine browser extension."></a>
+            <a href="/en/projects/other/podcast"><img src="../../assets/projects/other/podcast/preview.webp" class="project" alt="Michał Stankiewicz Podcast."></a>
+            <a href="/en/projects/other/mathboard"><img src="../../assets/projects/other/mathboard/preview.webp" class="project" alt="MathBoard, a set of accessibility keyboard panels"></a>
+            <a href="/en/projects/other/btt-gpu-switcher"><img src="../../assets/projects/other/btt-gpu-switcher/preview.webp" class="project" alt="GPU Switcher for BetterTouchTool"></a>
         </div>
     </div>
 <footer>
-        <p><p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()">Przełącz na 🇵🇱 polski</a></p>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Przełącz na 🇵🇱 polski</a></p>
         <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Social Media [PL]</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/en/licence" class="footerTerms">Terms of use and copyrights</a></p>

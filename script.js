@@ -7,6 +7,17 @@ function navbar() {
     }
 }
 
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            plusSlides(-1);
+            break;
+        case 39:
+            plusSlides(1);
+            break;
+    }
+};
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -40,5 +51,11 @@ function changeLanguageAndOpen() {
         window.open(newUrl, '_self');
     } else {
         console.log("Adres URL nie zawiera ani '/pl' ani '/en'");
+    }
+}
+
+function langKey(event) {
+    if (event.keyCode === 13) {
+        changeLanguageAndOpen();
     }
 }

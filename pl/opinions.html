@@ -17,14 +17,14 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a class="logo"><img src="../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/pl/" id="navStart">Start</a>
         <a href="/pl/projects"  id="navProjects">Moje projekty</a>
-        <a href="/pl/opinions" class="active" id="navOpinions">Opinie</a>
+        <a href="/pl/opinions" class="active" tabindex="-1" id="navOpinions">Opinie</a>
         <a href="/pl/contact" id="navContact">Kontakt</a>
         <a href="/pl/about" id="navAbout">O mnie</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <img src="../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
     <div class="content only-text">
@@ -43,7 +43,7 @@
         </div>
     </div>
     <footer>
-        <p><p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()">Switch to 🇺🇸 English (US)</a></p>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
         <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Media społecznościowe</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>

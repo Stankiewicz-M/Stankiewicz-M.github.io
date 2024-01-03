@@ -17,18 +17,18 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/pl/" id="navStart">Start</a>
-        <a href="/pl/projects" class="active"  id="navProjects">Moje projekty</a>
+        <a href="/pl/projects" class="active" tabindex="-1" id="navProjects">Moje projekty</a>
         <a href="/pl/opinions" id="navOpinions">Opinie</a>
         <a href="/pl/contact" id="navContact">Kontakt</a>
         <a href="/pl/about" id="navAbout">O mnie</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
     <div class="content">
-            <a href="../../../projects"><button class="back-button">Wstecz</button></a>
+            <a href="../../../projects" tabindex="-1"><button class="back-button">Wstecz</button></a>
         <br>
         <br>
         <br>
@@ -37,22 +37,22 @@
                 <div class="header-image">
                     <div class="slideshow-container">
                         <div class="images-slides">
-                            <img src="../../../assets/projects/other/betterkbin/preview.webp" style="width:100%">
+                            <img src="../../../assets/projects/other/betterkbin/preview.webp" style="width:100%" alt="Plakat rozszerzenia do przeglądarki Better /kbin.">
                         </div>
                     </div>
                 </div>
                 <div class="header-text">
                     <h1 class="title" id="otherBetterKbinTitle">Better /kbin</h1>
                     <p class="description" id="otherBetterKbinDescription">Pierwotnym założeniem rozszerzenia Better /kbin było proste udostępnianie dowolnej strony internetowej do instancji <a href="https://karab.in/">karab.in</a> serwisu <a href="https://kbin.pub">/kbin</a>. Obecnie rozszerzenie daje wiele funkcji, takich jak automatyczną zmianę motywu, której w serwisie brakuje, oraz oferuje wsparcie dla innych instancji /kbin.</p>
-                    <a href="https://chrome.google.com/webstore/detail/lhjckkbpebkjgjmlcladdmcabkgkffkp"><button id="downloadCWS">Pobierz z Chrome Web Store</button></a>
-                    <a href="https://addons.mozilla.org/addon/better-kbin"><button id="downloadMA">Pobierz z Mozilla Add-ons</button></a>
-                    <a href="https://microsoftedge.microsoft.com/addons/detail/ackoiabiafbmmeknggaoaicibeejbkfl"><button id="downloadMSA">Pobierz z Microsoft Edge Add-ons</button></a>
+                    <a href="https://chrome.google.com/webstore/detail/lhjckkbpebkjgjmlcladdmcabkgkffkp" tabindex="-1"><button id="downloadCWS">Pobierz z Chrome Web Store</button></a>
+                    <a href="https://addons.mozilla.org/addon/better-kbin"><button id="downloadMA" tabindex="-1">Pobierz z Mozilla Add-ons</button></a>
+                    <a href="https://microsoftedge.microsoft.com/addons/detail/ackoiabiafbmmeknggaoaicibeejbkfl" tabindex="-1"><button id="downloadMSA">Pobierz z Microsoft Edge Add-ons</button></a>
                 </div>
             </div>
         </header>
 </div>
 <footer>
-        <p><p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()">Switch to 🇺🇸 English (US)</a></p>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
         <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Media społecznościowe</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>

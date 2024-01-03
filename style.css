@@ -4,6 +4,8 @@
     --color-background: #f7f7f7;
     --color-accent: #192A4C;
     --color-accent-hover: #3a5792;
+    --color-accent-2: #192A4C;
+    --color-accent-hover-2: #3a5792;
     --color-text: #1b1b1b;
     --color-text-sec: #5b5b5b;
     --color-nav: #f1f1f1b9;
@@ -13,13 +15,23 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-background: #1b1b1b;
-        --color-accent: #7ba5fa;
-        --color-accent-hover: #a4bef2;
+        --color-accent: #1249b7;
+        --color-accent-hover: #1b58d1;
+        --color-accent-2: #7ba5fa;
+        --color-accent-hover-2: #a4bef2;
         --color-text: #efefef;
         --color-text-sec: #cbcbcb;
         --color-nav: #202020ba;
         --color-nav-support: #252525;
     }
+}
+
+*:focus {
+    outline: none
+}
+
+a:focus {
+    outline: var(--color-accent) 4px solid;
 }
 
 body {
@@ -43,7 +55,7 @@ html {
 }
 
 a {
-    color: var(--color-accent);
+    color: var(--color-accent-2);
 }
 
 /* GENERAL - end */
@@ -75,7 +87,7 @@ nav {
 }
 
 nav a {
-    color: var(--color-accent);
+    color: var(--color-accent-2);
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 32px;
@@ -83,10 +95,11 @@ nav a {
     white-space: nowrap;
 }
 
-nav a:hover:not(:first-child):not(:last-child):not(.active) {
+nav a:hover:not(:first-child):not(:last-child):not(.active), nav a:focus:not(:first-child):not(:last-child):not(.active) {
     background-color: var(--color-background);
-    color: var(--color-accent-hover);
+    color: var(--color-accent-hover-2);
     box-shadow: #00000054 0px 4px 16px 0px;
+    outline: none;
 }
 
 nav a.active {
@@ -141,6 +154,7 @@ nav a:last-child {
 
     nav {
         width: min-content;
+        height: 56px;
         padding: 8px 0;
         bottom: 0;
         transition: .1s;
@@ -151,8 +165,10 @@ nav a:last-child {
         display: block;
         margin: 16px;
         width: calc(100% - 32px);
+        height: min-content;
         border-radius: 24px;
         padding: 4px 6px;
+        background-color: var(--color-nav-support);
     }
     
     .responsive a:not(:first-child) {
@@ -160,7 +176,7 @@ nav a:last-child {
         padding: 12px 16px;
         margin: 4px 0;
         border-radius: 32px;
-        color: var(--color-accent);
+        color: var(--color-accent-2);
         text-decoration: none;
         transition: background-color 0.2s ease-in-out;
     }
@@ -308,6 +324,11 @@ button:hover {
     box-shadow: #00000054 0px 2px 8px 0px;
 }
 
+button:focus {
+    background-color: var(--color-accent-hover);
+    box-shadow: #00000054 0px 2px 8px 0px;
+}
+
 .buttons {
     background-color: var(--color-nav);
     align-items: center;
@@ -328,6 +349,16 @@ button:hover {
     filter: brightness(90%);
 }
 
+a:focus .project {
+    filter: brightness(90%);
+    outline: var(--color-accent) 4px solid;
+    box-shadow: #00000054 0px 4px 16px 0px;
+}
+
+a:has(.project) {
+    outline: none;
+}
+
 .back-button {
     position: fixed;
     background-color: var(--color-nav-support);
@@ -337,7 +368,7 @@ button:hover {
     top: 22px;
 }
 
-.back-button:hover {
+.back-button:hover, .back-button:focus {
     background-color: var(--color-accent);
     color: #efefef;
 }
@@ -562,6 +593,23 @@ footer {
     padding: 4px 10px;
     background-color: var(--color-nav-support);
     transition: background-color 0.2s ease-in-out;
+}
+
+.footerSocial:hover, .footerLanguage:hover {
+    box-shadow: #00000054 0px 2px 8px 0px;
+}
+
+.footerSocial:focus, .footerLanguage:focus {
+    box-shadow: #00000054 0px 2px 8px 0px;
+    background-color: var(--color-accent);
+    color: var(--color-nav);
+}
+
+@media (prefers-color-scheme: dark) {
+    .footerSocial:focus, .footerLanguage:focus {
+        background-color: var(--color-accent);
+        color: var(--color-text);
+    }
 }
 
 .grid-container {

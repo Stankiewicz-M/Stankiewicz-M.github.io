@@ -17,18 +17,18 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono"></a>
+        <a class="logo"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/pl/" id="navStart">Start</a>
-        <a href="/pl/projects" class="active"  id="navProjects">Moje projekty</a>
+        <a href="/pl/projects" class="active" tabindex="-1" id="navProjects">Moje projekty</a>
         <a href="/pl/opinions" id="navOpinions">Opinie</a>
         <a href="/pl/contact" id="navContact">Kontakt</a>
         <a href="/pl/about" id="navAbout">O mnie</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <img src="../../../assets/logo/logo_color.svg" alt="logo" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="logo" class="logo logo-mono">
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
     <div class="content">
-            <a href="../../../projects"><button class="back-button">Wstecz</button></a>
+            <a href="../../../projects" tabindex="-1"><button class="back-button">Wstecz</button></a>
         <br>
         <br>
         <br>
@@ -37,49 +37,49 @@
                 <div class="header-image">
                     <div class="slideshow-container">
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/preview.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/preview.webp" style="width:100%" alt="Logo MS z neonowym blaskiem i napisem Lights.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/1.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/1.webp" style="width:100%" alt="Dwie czarne kule. Każda ma w połowie swojej wysokości świecącą obwódkę - jedna niebieska, druga zielona.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/2.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/2.webp" style="width:100%" alt="Logo MS z niebieskimi promieniami światła na ciemnym tle.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/3.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/3.webp" style="width:100%" alt="Kostki z neonowymi konturami w kolorach: żółty, czerwony, niebieski.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/4.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/4.webp" style="width:100%" alt="Kształty z neonowym oświetleniem w kolorach: czerwony, zielony, niebieski.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/5.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/5.webp" style="width:100%" alt="Logo MS z neonowym blaskiem.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/6.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/6.webp" style="width:100%" alt="Piramidy z neonowymi krawędziami w kolorach: żółty, czerwony, niebieski.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/7.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/7.webp" style="width:100%" alt="Granatowe logo MS na ścianie z białym oświetleniem.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/8.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/8.webp" style="width:100%" alt="Logo MS na tle kolorowych kwadratów różnej wielkości.">
                         </div>
                         <div class="images-slides">
-                            <img src="../../../assets/projects/graphics/lights/9.webp" style="width:100%">
+                            <img src="../../../assets/projects/graphics/lights/9.webp" style="width:100%" alt="Abstrakcyjne logo MS na tle kilku ścian">
                         </div>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)" aria-label="Poprzednie zdjęcie">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)" aria-label="Następne zdjęcie">&#10095;</a>
                     </div>
                 </div>
                 <div class="header-text">
                     <h1 class="title" id="graphicsLightsTitle">Lights - zestaw tapet</h1>
                     <p class="description" id="graphicsLightsDescription"></p>
-                    <a href="https://www.dropbox.com/s/mnjs8y743p4jp95/lights.zip?dl=1"><button id="downloadZip169">Pobierz zip (16:9)</button></a>
+                    <a href="https://www.dropbox.com/s/mnjs8y743p4jp95/lights.zip?dl=1" tabindex="-1"><button id="downloadZip169">Pobierz zip (16:9)</button></a>
                 </div>
             </div>
         </header>
         </div>
         <footer>
-        <p><p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()">Switch to 🇺🇸 English (US)</a></p>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
         <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Media społecznościowe</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
