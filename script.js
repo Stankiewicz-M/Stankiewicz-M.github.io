@@ -59,3 +59,20 @@ function langKey(event) {
         changeLanguageAndOpen();
     }
 }
+
+function calculateAge() {
+    var birthDate = new Date('2003-03-18');
+    var currentDate = new Date();
+    var age = currentDate.getFullYear() - birthDate.getFullYear();
+    var m = currentDate.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('age').innerText = calculateAge();
+});
