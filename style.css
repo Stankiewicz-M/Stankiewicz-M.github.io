@@ -629,6 +629,11 @@ footer {
     margin-left: 8px;
     margin-right: 4px;
     text-decoration: none !important;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,182 @@
+:root {
+    --color-background: #f7f7f7;
+    --color-accent: #192A4C;
+    --color-accent-hover: #3a5792;
+    --color-accent-2: #192A4C;
+    --color-accent-hover-2: #3a5792;
+    --color-text: #1b1b1b;
+    --color-text-sec: #5b5b5b;
+    --color-nav: #f1f1f1b9;
+    --color-nav-support: #f1f1f1;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #1b1b1b;
+        --color-accent: #1249b7;
+        --color-accent-hover: #1b58d1;
+        --color-accent-2: #7ba5fa;
+        --color-accent-hover-2: #a4bef2;
+        --color-text: #efefef;
+        --color-text-sec: #cbcbcb;
+        --color-nav: #202020ba;
+        --color-nav-support: #252525;
+    }
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    border-radius: 32px;
+}
+
+.banner {
+    margin: 5px auto;
+    background-image: url('/assets/background.webp');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: calc(100% - 10px);
+    height: 33vh;
+    border-radius: 27px 27px 0 0;
+}
+
+.content {
+    width: 100%;
+    margin: calc(33vh - 100px) 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.aboutImage {
+    width: 33%;
+    height: 33vw;
+    max-width: 200px;
+    max-height: 200px;
+    background-image: url(/assets/photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    margin: 0 auto;
+    border: 5px solid var(--color-background);
+}
+
+.text {
+    margin: 10px 10px;
+    max-width: 600px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-text-sec);
+}
+
+a {
+    color: var(--color-accent-2);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-accent-hover-2);
+}
+
+button {
+    background-color: var(--color-accent);
+    color: #efefef;
+    border: var(--color-accent) 2px solid;
+    border-radius: 32px;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: #00000054 0px 4px 16px 0px;
+    margin: 4px 8px;
+}
+
+button:hover {
+    background-color: var(--color-accent-hover);
+    box-shadow: #00000054 0px 2px 8px 0px;
+}
+
+button:focus {
+    background-color: var(--color-accent-hover);
+    box-shadow: #00000054 0px 2px 8px 0px;
+}
+
+.buttonSecondary {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-accent);
+}
+
+.buttonSecondary:hover {
+    background-color: var(--color-nav-support);
+}
+
+.buttonSecondary:focus {
+    background-color: var(--color-nav-support);
+}
+
+@media screen and (max-height: 700px) {
+    .banner {
+        height: 25vh;
+    }
+
+    .aboutImage {
+        height: 25vw;
+        max-height: 150px;
+        width: 25%;
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .text {
+        margin: 10px 10px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .buttons {
+        position: absolute;
+        bottom: 45px;
+    }
+
+    .textAbout {
+        display: none;
+    }
+}

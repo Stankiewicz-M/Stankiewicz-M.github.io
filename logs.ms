@@ -261,7 +261,12 @@ v. 24021
 - Added 'btt-hi-notch.html'
 - Added 'btt-hi-notch.html' to the list of projects
 - Added 'btt-hi-notch.html' to 'sitemap.xml'
-- Added verification to style.css
+- Added verification badge to style.css
 - Changed color of back button in projects
 - Changed border radius of images in projects
 - Changed size of background in projects for smaller screens
+
+v. 24022
+- Added frame
+- Updated 'robots.txt'
+- Removed selection from verification badge
