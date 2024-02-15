@@ -127,6 +127,12 @@
       <priority>0.5</priority>
 </url>
 <url>
+      <loc>https://www.mstankiewi.cz/pl/projects/other/btt-hi-notch</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
       <loc>https://www.mstankiewi.cz/en/projects/ui/shcenter</loc>
       <lastmod>2005-01-01</lastmod>
       <changefreq>never</changefreq>
@@ -182,6 +188,12 @@
 </url>
 <url>
       <loc>https://www.mstankiewi.cz/en/projects/other/btt-gpu-switcher</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>https://www.mstankiewi.cz/en/projects/other/btt-hi-notch</loc>
       <lastmod>2005-01-01</lastmod>
       <changefreq>never</changefreq>
       <priority>0.5</priority>

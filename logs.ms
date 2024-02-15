@@ -255,3 +255,13 @@ v. 24011
 v. 24012
 - Added alternative text for all images
 - Improved accessibility
+
+[2024.02.15]
+v. 24021
+- Added 'btt-hi-notch.html'
+- Added 'btt-hi-notch.html' to the list of projects
+- Added 'btt-hi-notch.html' to 'sitemap.xml'
+- Added verification to style.css
+- Changed color of back button in projects
+- Changed border radius of images in projects
+- Changed size of background in projects for smaller screens
