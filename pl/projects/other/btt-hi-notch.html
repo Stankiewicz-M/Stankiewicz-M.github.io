@@ -28,7 +28,7 @@
         </a>
     </nav>
     <div class="content">
-            <a href="../../../projects" tabindex="-1"><button class="back-button">Wstecz</button></a>
+            <a href="/pl/projects" tabindex="-1"><button class="back-button">Wstecz</button></a>
         <br>
         <br>
         <br>
@@ -56,12 +56,21 @@
         </header>
 </div>
 <footer>
-        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
-        <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Media społecznościowe</a></p>
-        <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
-        <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
-    </footer>
-    <script src="../../../script.js"></script>
-    <script src="../../../lang.js"></script>
+    <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
+    <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Media społecznościowe</a></p>
+    <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
+    <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
+</footer>
+<script src="../../../script.js"></script>
+<script src="../../../lang.js"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('download') == 1) {
+        document.getElementById("downloadFile").click();
+    } else if (urlParams.get('download') == 2) {
+        document.getElementById("importBTT").click();
+        window.history.replaceState({}, document.title, "/" + window.location.pathname);
+    }
+</script>
 </body>
 </html>

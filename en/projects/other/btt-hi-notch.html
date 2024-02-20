@@ -63,6 +63,14 @@
 </footer>
 <script src="../../../script.js"></script>
 <script src="../../../lang.js"></script>
-
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('download') == 1) {
+        document.getElementById("downloadFile").click();
+    } else if (urlParams.get('download') == 2) {
+        document.getElementById("importBTT").click();
+        window.history.replaceState({}, document.title, "/" + window.location.pathname);
+    }
+</script>
 </body>
 </html>

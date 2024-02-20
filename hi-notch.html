@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Hi Notch! • Michał Stankiewicz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mstankiewi.cz/hi-notch" />
+    <meta property="og:image" content="https://www.mstankiewi.cz/assets/projects/other/btt-hi-notch/og-social-media.png" />
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <link rel="icon" href="/assets/favicon.png">
+    <title>Hi Notch! • Michał Stankiewicz</title>
+</head>
+<body>
+    <script>
+        var currentURL = window.location.href;
+        var language = window.navigator.language;
+        if (language.startsWith('pl')) {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/pl/projects/other/btt-hi-notch";
+            var paramsIndex = currentURL.indexOf("?");
+            if (paramsIndex != -1) {
+                var params = currentURL.substr(paramsIndex);
+                newURL += params;
+            }
+            window.location.replace(newURL);
+        } else {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/en/projects/other/btt-hi-notch";
+            var paramsIndex = currentURL.indexOf("?");
+            if (paramsIndex != -1) {
+                var params = currentURL.substr(paramsIndex);
+                newURL += params;
+            }
+            window.location.replace(newURL);
+        }
+    </script>
+</body>
+</html>

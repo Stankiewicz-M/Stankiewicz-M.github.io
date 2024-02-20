@@ -270,3 +270,8 @@ v. 24022
 - Added frame
 - Updated 'robots.txt'
 - Removed selection from verification badge
+
+[2024.02.20]
+v. 24023
+- Added redirection from /hi-notch to /projects/other/btt-hi-notch
+- Added link that allows to download or import BTT preset in 'btt-hi-notch.html' when link has "download=1" or "download=2" parameters in URL
