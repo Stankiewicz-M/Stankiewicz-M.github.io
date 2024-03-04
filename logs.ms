@@ -275,3 +275,7 @@ v. 24022
 v. 24023
 - Added redirection from /hi-notch to /projects/other/btt-hi-notch
 - Added link that allows to download or import BTT preset in 'btt-hi-notch.html' when link has "download=1" or "download=2" parameters in URL
+
+[2024.03.04]
+v. 24031
+- Updated 'about.html'
