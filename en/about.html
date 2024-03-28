@@ -32,7 +32,7 @@
         <br>
         <div class="aboutImage" id="aboutImage"></div>
         <br>
-        <h2 class="subtitle" id="aboutSubtitle">My name is Michał Stankiewicz.</h2>
+        <h2 class="subtitle" id="aboutSubtitle">My name is Michał Stankiewicz and I am <span id="age">JSage</span>.</h2>
         <p id="aboutDescription1">I am a student at <a href="https://www.wsb-nlu.edu.pl/en/informatyka">Wyższa Szkoła Biznesu - National Louis University in Nowy Sącz</a> at Department of Social and Computer Science; cybersecurity analyst specialization. Ultimately, I would like to work on the administration of IT systems and verification of software accessibility for people with disabilities.</p>
         <p id="aboutDescription2">Privately, I am interested in board and computer games, computer graphics and modern technologies such as smart home. I also enjoy designing user interfaces in applications and operating systems.</p>
         <h2 class="subtitle" id="aboutSubtitle2">My skills</h2>
@@ -57,7 +57,24 @@
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/en/licence" class="footerTerms">Terms of use and copyrights</a></p>
     </footer>
-    <script src="/script.js"></script>
-    
+    <script src="../script.js"></script>
+    <script>
+        function calculateAge() {
+        var birthDate = new Date('2003-03-18');
+        var currentDate = new Date();
+        var age = currentDate.getFullYear() - birthDate.getFullYear();
+        var m = currentDate.getMonth() - birthDate.getMonth();
+
+        if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        return age;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('age').innerText = calculateAge();
+        });
+    </script>
 </body>
 </html>

@@ -27,12 +27,12 @@
             <img src="../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
         </a>
     </nav>
-    <div class="content only-text">
+    <div class="content only-text" id="content">
         <h1 class="title" id="aboutTitle">O mnie</h1>
         <br>
         <div class="aboutImage" id="aboutImage"></div>
         <br>
-        <h2 class="subtitle" id="aboutSubtitle">Nazywam się Michał Stankiewicz.</h2>
+        <h2 class="subtitle" id="aboutSubtitle">Nazywam się Michał Stankiewicz i mam <span id="age">JSage</span> lat.</h2>
         <p id="aboutDescription1">Jestem studentem <a href="https://www.wsb-nlu.edu.pl/pl/informatyka">Wyższej Szkoły Biznesu - National Louis University w Nowym Sączu</a> na Wydziale Nauk Społecznych i Informatyki; specjalizacja "Analityk Cyberbezpieczeństwa". Docelowo chciałbym zajmować się administracją systemami informatycznymi oraz weryfikacją dostępności oprogramowania pod kątem osób z niepełnosprawnościami.</p>
         <p id="aboutDescription2">Prywatnie interesuję się grami planszowymi i komputerowymi, grafiką komputerową oraz nowoczesnymi technologiami, takimi jak inteligentny dom. Lubię też projektować interfejsy użytkownika w aplikacjach oraz systemach operacyjnych.</p>
         <h2 class="subtitle" id="aboutSubtitle2">Moje umiejętności</h2>
@@ -58,6 +58,23 @@
         <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
     </footer>
     <script src="../script.js"></script>
-    
+    <script>
+        function calculateAge() {
+        var birthDate = new Date('2003-03-18');
+        var currentDate = new Date();
+        var age = currentDate.getFullYear() - birthDate.getFullYear();
+        var m = currentDate.getMonth() - birthDate.getMonth();
+
+        if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        return age;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('age').innerText = calculateAge();
+        });
+    </script>
 </body>
 </html>
