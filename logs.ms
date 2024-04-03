@@ -288,3 +288,6 @@ v. 24032
 v. 24041
 - Added fonts to 'fonts' folder in 'assets'
 - Moved colors from 'style.css' to 'colors.css'
+
+v. 24042
+- Fixed a bug with a Montserrat font
