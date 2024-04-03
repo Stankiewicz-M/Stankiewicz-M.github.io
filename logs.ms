@@ -283,3 +283,8 @@ v. 24031
 [2024.03.18]
 v. 24032
 - Added my age to 'about.html'
+
+[2024.04.03]
+v. 24041
+- Added fonts to 'fonts' folder in 'assets'
+- Moved colors from 'style.css' to 'colors.css'
