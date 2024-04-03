@@ -291,3 +291,9 @@ v. 24041
 
 v. 24042
 - Fixed a bug with a Montserrat font
+
+v. 24043
+- Added 'Source Code Pro' font
+- Added style for all fonts
+- Added more variants of Montserrat font
+- Removed unnecessary comments from fonts files
