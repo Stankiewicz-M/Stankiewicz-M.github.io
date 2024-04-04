@@ -297,3 +297,11 @@ v. 24043
 - Added style for all fonts
 - Added more variants of Montserrat font
 - Removed unnecessary comments from fonts files
+
+[2024.04.04]
+v. 24044
+- Added 'Material Icons' font
+- Added 'Material Icons' font to 'fonts' style in 'assets/fonts'
+- Changed language button icon
+- Changed menu button icon in mobile version
+- Fixed 404 page

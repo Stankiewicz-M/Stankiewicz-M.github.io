@@ -59,4 +59,3 @@ function langKey(event) {
         changeLanguageAndOpen();
     }
 }
-

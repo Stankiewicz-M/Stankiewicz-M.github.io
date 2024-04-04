@@ -17,18 +17,24 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <a class="logo"><img src="../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
+        <a class="logo-prime"><img src="../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/pl" class="active" tabindex="-1" id="navStart">Start</a>
         <a href="/pl/projects"  id="navProjects">Moje projekty</a>
         <a href="/pl/opinions" id="navOpinions">Opinie</a>
         <a href="/pl/contact" id="navContact">Kontakt</a>
         <a href="/pl/about" id="navAbout">O mnie</a>
         <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
-            <img src="../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono">
+            <span class="material-icons">
+                menu
+            </span>
         </a>
     </nav>
     <div class="changeLanguageStart" id="changeLanguageStart">
-        <p><a target="_blank" id="changeLanguageStartButton" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
+        <p><a target="_blank" id="changeLanguageStartButton" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">
+            <span class="material-icons" lang="en" aria-label="Change language" title="Change language">
+                language
+            </span>
+        </a></p>
     </div>
     <div class="background">
         <div class="content_start">
