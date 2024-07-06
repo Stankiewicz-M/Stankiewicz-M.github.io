@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Better /kbin • Michał Stankiewicz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mstankiewi.cz/projects/other/betterkbin" />
+    <meta property="og:image" content="https://www.mstankiewi.cz/assets/projects/other/betterkbin/og-social-media.png" />
+    <link  type="text/css" rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/touch-icons/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../assets/touch-icons/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/touch-icons/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/touch-icons/apple-touch-icon-ipad-retina-152x152.png">
+    <title>Better /kbin • Michał Stankiewicz</title>
+</head>
+<body>
+    <script>
+        var currentURL = window.location.href;
+        var language = window.navigator.language;
+        if (language.startsWith('pl')) {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/pl" + restOfUrl;
+            window.location.replace(newURL);
+        } else {
+            var firstSlashIndex = currentURL.indexOf("/", 8);
+            var restOfUrl = currentURL.substr(firstSlashIndex);
+            var newURL = currentURL.substr(0, firstSlashIndex) + "/en" + restOfUrl;
+            window.location.replace(newURL);
+        }
+    </script>
+</body>
+</html>
