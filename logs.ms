@@ -305,3 +305,19 @@ v. 24044
 - Changed language button icon
 - Changed menu button icon in mobile version
 - Fixed 404 page
+
+[2024.06.24]
+v. 24061
+- Added Mastodon verification
+
+[2024.07.05]
+v. 24071
+- Added repository url to 'betterkbin.html'
+
+[2024.07.06]
+v. 24072
+- Added privacy policy for Better /kbin extension
+
+[2024.07.10]
+v. 24073
+- Added Mastodon's OpenGraph tag
