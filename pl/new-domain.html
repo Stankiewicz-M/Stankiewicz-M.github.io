@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Komunikat: Zmiana adresów stron • Michał Stankiewicz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stankiewiczm.eu/pl/new-domain" />
+    <meta property="og:image" content="https://stankiewiczm.eu/assets/og-social-media.png" />
+    <meta name="fediverse:creator" content="@mstankiewicz@pol.social" />
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/touch-icons/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/touch-icons/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/touch-icons/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/touch-icons/apple-touch-icon-ipad-retina-152x152.png">
+    <title>Zmiana adresów stron - 22.07.2024 • Michał Stankiewicz</title>
+</head>
+<body>
+    <div id="alert" class="alert">
+        <p id="alert-title">Title</p>
+        <p id="alert-message">Message</p>
+        <script src="/alert.js"></script>
+    </div>
+    <nav class="navbar" id="navbar">
+        <a class="logo-prime"><img src="../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
+        <a href="/pl/" id="navStart">Start</a>
+        <a href="/pl/projects"  id="navProjects">Moje projekty</a>
+        <a href="/pl/opinions" id="navOpinions">Opinie</a>
+        <a href="/pl/contact" id="navContact">Kontakt</a>
+        <a href="/pl/about" id="navAbout">O mnie</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()" tabindex="1" title="Menu">
+            <span class="material-icons">
+                menu
+            </span>
+        </a>
+    </nav>
+    <div class="content" style="max-width: 1000px; margin: 0 auto;">
+        <h1 class="title" id="domainTitle">Zmiana adresów stron - 22.07.2024</h1>
+        <br>
+        <p id="domainDescription11">Do roku 2026 planowane jest usunięcie domeny stankiewiczm.eu i przeniesienie wszystkich danych do stankiewiczm.eu.</p>
+        <br>
+        <h2 class="subtitle" id="domainSubitle2">Co to oznacza?</h2>
+        <p id="domainDescription21">1. Do tego czasu zarówno strony internetowe jak i poczta e-mail w domenie stankiewiczm.eu, będą działać, ale będą przekierowywać pod nowe adresy - w domenie stankiewiczm.eu. Zmiana ta będzie się odbywać stopniowo, ze względu na ilość pracy jaka mnie czeka.</p>
+        <p id="domainDescription22">2. Możliwe, że niektóre linki przestaną działać, jednak postaram się zrobić co w mojej mocy, aby tego uniknąć. Jeśli zobaczysz link/mail w domenie stankiewiczm.eu i nie będzie on działał to zastąp sam fragment "stankiewiczm.eu", domeną "stankiewiczm.eu", np.</p>
+        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">https://www.stankiewiczm.eu/contact -> https://www.stankiewiczm.eu/contact</code><br>
+        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">https://social.stankiewiczm.eu -> https://social.stankiewiczm.eu</code><br>
+        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">contact@stankiewiczm.eu -> contact@stankiewiczm.eu</code><br><br>
+        <h3 class="subtitle" id="domainSubitle3">Pssst... Pomóc?</h3>
+        <p id="domainDescription33">Wklej poniżej link lub adres w domenie stankiewiczm.eu, a ja postaram się Ciebie przenieść pod nowy adres:</p>
+        <form>
+            <input type="text" id="domainInput" name="domainInput" placeholder="Wklej link lub adres e-mail">
+            <button type="submit" id="domainSubmit">Przenieś</button>
+        </form>
+        <br>
+        <h3 class="subtitle" id="domainSubitle4">Wracając!</h3>
+        <p id="domainDescription41">3. Wszystkie dotychczasowe linki w domenie stankiewiczm.eu zostają wyłączone, ponieważ w okresie dwóch ostatnich lat nie odnotowano żadnego ich otwarcia.</p>
+        <h3 class="subtitle" id="domainSubitle5">Dziękuję za zrozumienie i przepraszam za problemy.</h3>
+    </div>
+    <footer>
+        <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
+    </footer>
+    <script src="../script.js"></script>
+    <script>
+        document.getElementById("domainSubmit").addEventListener("click", function() {
+            var input = document.getElementById("domainInput").value;
+            if (input.includes("stankiewiczm.eu")) {
+                var newURL = input.replace("stankiewiczm.eu", "stankiewiczm.eu");
+                if (newURL.includes("@")) {
+                    window.open("mailto:" + newURL);
+                } else {
+                    window.open(newURL, "_blank");
+                }
+            } else {
+                alert("Nie znaleziono domeny stankiewiczm.eu w podanym adresie.");
+            }
+        });
+    </script>
+</body>
+</html>

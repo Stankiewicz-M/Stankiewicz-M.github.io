@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="MathBoard • Michał Stankiewicz" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mstankiewi.cz/pl/projects/other/mathboard" />
-    <meta property="og:image" content="https://www.mstankiewi.cz/assets/projects/other/mathboard/og-social-media.png" />
+    <meta property="og:url" content="https://stankiewiczm.eu/pl/projects/other/mathboard" />
+    <meta property="og:image" content="https://www.stankiewiczm.eu/assets/projects/other/mathboard/og-social-media.png" />
     <meta name="fediverse:creator" content="@mstankiewicz@pol.social" />
     <link type="text/css" rel="stylesheet" href="../../../style.css">
     <link rel="icon" href="../../../assets/favicon.png">
@@ -17,6 +17,11 @@
     <title>MathBoard • Michał Stankiewicz</title>
 </head>
 <body>
+    <div id="alert" class="alert">
+        <p id="alert-title">Title</p>
+        <p id="alert-message">Message</p>
+        <script src="/alert.js"></script>
+    </div>
     <nav class="navbar" id="navbar">
         <a class="logo-prime"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/pl/" id="navStart">Start</a>
@@ -48,18 +53,17 @@
                     <h1 class="title" id="otherMathBoardTitle">MathBoard</h1>
                     <p class="description" id="otherMathBoardDescription">MathBoard to zestaw paneli do Klawiatury dostępności w systemie macOS, który pozwala na szybkie wpisanie różnych równań matematycznych w dokumentach programu Microsoft Word.<br>
                         "macOS" jest znakiem towarowym firmy Apple Inc. "Microsoft Word" jest znakiem towarowym firmy Microsoft Corporation.</p>
-                    <a href="https://www.mstankiewi.cz/MathBoard/download/mathboard_22081.dmg" tabindex="-1"><button id="download">Pobierz</button></a>
+                    <a href="https://www.stankiewiczm.eu/MathBoard/download/mathboard_22081.dmg" tabindex="-1"><button id="download">Pobierz</button></a>
                 </div>
             </div>
         </header>
 </div>
 <footer>
         <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Switch to 🇺🇸 English (US)</a></p>
-        <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Media społecznościowe</a></p>
+        <p><a href="https://social.stankiewiczm.eu" target="_blank" class="footerSocial">Media społecznościowe</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/pl/licence" class="footerTerms">Warunki korzystania z zasobów i prawa autorskie</a></p>
     </footer>
     <script src="../../../script.js"></script>
-    <script src="../../../lang.js"></script>
 </body>
 </html>

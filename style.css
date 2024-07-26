@@ -325,10 +325,33 @@ nav a:last-child {
         bottom: 8px;
     }
 }
+
     
 /* CONTENT START - end */
 
 /* CONTENT - begin */
+
+.alert {
+    background-color: red;
+    color: var(--color-text);
+    margin: 0;
+    text-align: center;
+    display: none;
+}
+
+.alert.show {
+    display: block;
+}
+
+#alert-title {
+    font-weight: bold;
+    margin-bottom: -16px;
+}
+
+.alert a {
+    color: var(--color-text);
+    text-decoration: underline;
+}
 
 .content {
     padding: 96px 24px 24px 24px;
@@ -367,6 +390,23 @@ button:focus {
     padding: 8px;
     width: -moz-fit-content;
     width: fit-content;
+}
+
+input[type="text"] {
+    border-radius: 32px;
+    padding: 12px 24px;
+    border: var(--color-background) 4px solid;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: var(--color-accent) 4px solid;
+}
+
+input[type="text"]:hover {
+    border: var(--color-accent-hover) 4px solid;
 }
 
 .project {

@@ -1,0 +1,17 @@
+{
+    "alert": {
+        "pl": {
+            "title": "Zmiana adresów stron - 26.07.2024",
+            "message": "Do roku 2026 planowane jest usunięcie domeny stankiewiczm.eu. <a href='/new-domain'>Więcej informacji</a>"
+        },
+        "en": {
+            "title": "Change of websites addresses - 26.07.2024",
+            "message": "It is planned to remove the stankiewiczm.eu domain by 2026. <a href='/new-domain'>More info</a>"
+        },
+        "visiblity": {
+            "always": false,
+            "start": "2024-07-26",
+            "end": "2026-01-01"
+        }
+    }
+}

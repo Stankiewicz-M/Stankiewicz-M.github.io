@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="EssaSoft • Michał Stankiewicz" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mstankiewi.cz/en/projects/websites/essasoft" />
-    <meta property="og:image" content="https://www.mstankiewi.cz/assets/projects/websites/essasoft/og-social-media.png" />
+    <meta property="og:url" content="https://stankiewiczm.eu/en/projects/websites/essasoft" />
+    <meta property="og:image" content="https://www.stankiewiczm.eu/assets/projects/websites/essasoft/og-social-media.png" />
     <meta name="fediverse:creator" content="@mstankiewicz@pol.social" />
     <link type="text/css" rel="stylesheet" href="../../../style.css">
     <link rel="icon" href="../../../assets/favicon.png">
@@ -17,6 +17,11 @@
     <title>EssaSoft • Michał Stankiewicz</title>
 </head>
 <body>
+    <div id="alert" class="alert">
+        <p id="alert-title">Title</p>
+        <p id="alert-message">Message</p>
+        <script src="/alert.js"></script>
+    </div>
     <nav class="navbar" id="navbar">
         <a class="logo-prime"><img src="../../../assets/logo/logo_color.svg" alt="Menu" class="logo logo-color"><img src="../../../assets/logo/logo_mono.svg" alt="Menu" class="logo logo-mono"></a>
         <a href="/en/" id="navStart">Start</a>
@@ -47,18 +52,17 @@
                 <div class="header-text">
                     <h1 class="title" id="websitesEssaSoftTitle">EssaSoft</h1>
                     <p class="description" id="websitesEssaSoftDescription">I have set up the EssaSoft site so that anyone can download their favorite software to their computer without unnecessary browsing through the developers' websites. The site links directly to the installers provided by their publishers, so that one is guaranteed that the application has not been modified by third parties.</p>
-                    <a href="https://essasoft.mstankiewi.cz/" tabindex="-1"><button id="visitWebsite">Visit</button></a>
+                    <a href="https://essasoft.stankiewiczm.eu/" tabindex="-1"><button id="visitWebsite">Visit</button></a>
                 </div>
             </div>
         </header>
 </div>
 <footer>
         <p><a target="_blank" id="changeLanguage" class="footerLanguage" onclick="changeLanguageAndOpen()" onkeydown="langKey(event)" tabindex="0">Przełącz na 🇵🇱 polski</a></p>
-        <p><a href="https://social.mstankiewi.cz" target="_blank" class="footerSocial">Social Media [PL]</a></p>
+        <p><a href="https://social.stankiewiczm.eu" target="_blank" class="footerSocial">Social Media [PL]</a></p>
         <p>© <script>document.write(new Date().getFullYear())</script> Michał Stankiewicz</p>
         <p><a href="/en/licence" class="footerTerms">Terms of use and copyrights</a></p>
     </footer>
     <script src="../../../script.js"></script>
-    <script src="../../../lang.js"></script>
 </body>
 </html>
