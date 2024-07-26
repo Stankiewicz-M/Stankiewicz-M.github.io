@@ -322,11 +322,14 @@ v. 24072
 v. 24073
 - Added Mastodon's OpenGraph tag
 
-[-]
-v. 24074
+[2024.07.26]
+v. 24076
 - Added alert in all pages
 - Added 'alert.js'
 - Added 'new-domain.html'
 - Changed domain
 - Fixed Apple Touch Icon on some pages
 - Removed unnecessary code from 'script.js'
+
+v. 24076a
+- Changed date in 'new-domain.html'
