@@ -333,3 +333,7 @@ v. 24076
 
 v. 24076a
 - Changed date in 'new-domain.html'
+
+[2024.07.27]
+v. 24077
+- Fixed a bug with alert and navbar
