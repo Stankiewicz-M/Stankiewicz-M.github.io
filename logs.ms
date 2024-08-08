@@ -337,3 +337,7 @@ v. 24076a
 [2024.07.27]
 v. 24077
 - Fixed a bug with alert and navbar
+
+[2024.08.08]
+v. 24081
+- Added audioBlog
