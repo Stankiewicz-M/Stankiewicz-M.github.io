@@ -341,3 +341,6 @@ v. 24077
 [2024.08.08]
 v. 24081
 - Added audioBlog
+
+v. 24082
+- Fixed a bug with audioBlog
