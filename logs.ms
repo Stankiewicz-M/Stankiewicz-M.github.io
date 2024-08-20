@@ -344,3 +344,7 @@ v. 24081
 
 v. 24082
 - Fixed a bug with audioBlog
+
+[2024.08.20]
+v. 24083
+- Added Nove verification to 'index.html'
