@@ -2,11 +2,11 @@
     "alert": {
         "pl": {
             "title": "Zmiana adresów stron - 26.07.2024",
-            "message": "Do roku 2026 planowane jest usunięcie domeny stankiewiczm.eu. <a href='/new-domain'>Więcej informacji</a>"
+            "message": "Do roku 2026 planowane jest usunięcie domeny mstankiewi.cz. <a href='/new-domain'>Więcej informacji</a>"
         },
         "en": {
             "title": "Change of websites addresses - 26.07.2024",
-            "message": "It is planned to remove the stankiewiczm.eu domain by 2026. <a href='/new-domain'>More info</a>"
+            "message": "It is planned to remove the mstankiewi.cz domain by 2026. <a href='/new-domain'>More info</a>"
         },
         "visiblity": {
             "always": false,

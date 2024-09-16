@@ -348,3 +348,7 @@ v. 24082
 [2024.08.20]
 v. 24083
 - Added Nove verification to 'index.html'
+
+[2024.09.16]
+v. 24091
+- Fixed a typo in alert

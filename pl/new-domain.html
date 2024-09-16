@@ -38,16 +38,16 @@
     <div class="content" style="max-width: 1000px; margin: 0 auto;">
         <h1 class="title" id="domainTitle">Zmiana adresów stron - 26.07.2024</h1>
         <br>
-        <p id="domainDescription11">Do roku 2026 planowane jest usunięcie domeny stankiewiczm.eu i przeniesienie wszystkich danych do stankiewiczm.eu.</p>
+        <p id="domainDescription11">Do roku 2026 planowane jest usunięcie domeny mstankiewi.cz i przeniesienie wszystkich danych do stankiewiczm.eu.</p>
         <br>
         <h2 class="subtitle" id="domainSubitle2">Co to oznacza?</h2>
-        <p id="domainDescription21">1. Do tego czasu zarówno strony internetowe jak i poczta e-mail w domenie stankiewiczm.eu, będą działać, ale będą przekierowywać pod nowe adresy - w domenie stankiewiczm.eu. Zmiana ta będzie się odbywać stopniowo, ze względu na ilość pracy jaka mnie czeka.</p>
-        <p id="domainDescription22">2. Możliwe, że niektóre linki przestaną działać, jednak postaram się zrobić co w mojej mocy, aby tego uniknąć. Jeśli zobaczysz link/mail w domenie stankiewiczm.eu i nie będzie on działał to zastąp sam fragment "stankiewiczm.eu", domeną "stankiewiczm.eu", np.</p>
-        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">https://www.stankiewiczm.eu/contact -> https://www.stankiewiczm.eu/contact</code><br>
-        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">https://social.stankiewiczm.eu -> https://social.stankiewiczm.eu</code><br>
-        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">contact@stankiewiczm.eu -> contact@stankiewiczm.eu</code><br><br>
+        <p id="domainDescription21">1. Do tego czasu zarówno strony internetowe jak i poczta e-mail w domenie mstankiewi.cz, będą działać, ale będą przekierowywać pod nowe adresy - w domenie stankiewiczm.eu. Zmiana ta będzie się odbywać stopniowo, ze względu na ilość pracy jaka mnie czeka.</p>
+        <p id="domainDescription22">2. Możliwe, że niektóre linki przestaną działać, jednak postaram się zrobić co w mojej mocy, aby tego uniknąć. Jeśli zobaczysz link/mail w domenie mstankiewi.cz i nie będzie on działał to zastąp sam fragment "mstankiewi.cz", domeną "stankiewiczm.eu", np.</p>
+        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">https://www.mstankiewi.cz/contact -> https://www.stankiewiczm.eu/contact</code><br>
+        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">https://social.mstankiewi.cz -> https://social.stankiewiczm.eu</code><br>
+        <code style="background-color: var(--color-nav-support); padding: 8px 16px; border-radius: 4px; line-height: 48px;">contact@mstankiewi.cz -> contact@stankiewiczm.eu</code><br><br>
         <h3 class="subtitle" id="domainSubitle3">Pssst... Pomóc?</h3>
-        <p id="domainDescription33">Wklej poniżej link lub adres w domenie stankiewiczm.eu, a ja postaram się Ciebie przenieść pod nowy adres:</p>
+        <p id="domainDescription33">Wklej poniżej link lub adres w domenie mstankiewi.cz, a ja postaram się Ciebie przenieść pod nowy adres:</p>
         <form>
             <input type="text" id="domainInput" name="domainInput" placeholder="Wklej link lub adres e-mail">
             <button type="submit" id="domainSubmit">Przenieś</button>
@@ -64,15 +64,15 @@
     <script>
         document.getElementById("domainSubmit").addEventListener("click", function() {
             var input = document.getElementById("domainInput").value;
-            if (input.includes("stankiewiczm.eu")) {
-                var newURL = input.replace("stankiewiczm.eu", "stankiewiczm.eu");
+            if (input.includes("mstankiewi.cz")) {
+                var newURL = input.replace("mstankiewi.cz", "stankiewiczm.eu");
                 if (newURL.includes("@")) {
                     window.open("mailto:" + newURL);
                 } else {
                     window.open(newURL, "_blank");
                 }
             } else {
-                alert("Nie znaleziono domeny stankiewiczm.eu w podanym adresie.");
+                alert("Nie znaleziono domeny mstankiewi.cz w podanym adresie.");
             }
         });
     </script>
