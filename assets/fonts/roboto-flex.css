@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('/assets/fonts/roboto-flex-variable.woff2') format('woff2-variations');
+    src: url('/assets/fonts/roboto-flex-variable.woff2') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}

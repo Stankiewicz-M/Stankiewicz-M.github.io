@@ -352,3 +352,13 @@ v. 24083
 [2024.09.16]
 v. 24091
 - Fixed a typo in alert
+
+[2024.09.21]
+v. 24092
+- Added animations to buttons and links when the cursor hovers over them or they have focus
+- Changed the default plain text font to 'Roboto Flex
+- Changed the color of the alert to comply with WCAG 2.1 criterion 1.4.6
+- Replaced the standard font 'Montserrat' with a Variable version
+- Fixed grid colors on the 'about.html' page
+- Fixed the text on the 'about.html' page
+- Removed font support for older browsers

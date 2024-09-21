@@ -2,13 +2,7 @@
 
 @import url('/colors.css');
 
-@import url('/assets/fonts/roboto.css');
-
-@import url('/assets/fonts/montserrat.css');
-
-@import url('/assets/fonts/source-code-pro.css');
-
-@import url('/assets/fonts/material-icons.css');
+@import url('/assets/fonts/fonts.css');
 
 .material-icons {
     font-family: 'Material Icons';
@@ -32,17 +26,18 @@
 /* GENERAL - begin */
 
 *:focus {
-    outline: none
+    outline: none;
 }
 
 a:focus {
     outline: var(--color-accent) 4px solid;
+    font-variation-settings: 'wght' 600;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', 'Roboto', sans-serif;
     font-size: 16px;
     background-color: var(--color-background);
     color: var(--color-text);
@@ -65,11 +60,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-weight: 900;
+    font-variation-settings: 'wght' 900;
+}
+
+p {
+    transition: font-variation-settings 0.3s cubic-bezier(.79,.14,.15,.86);
 }
 
 a {
     color: var(--color-accent-2);
+    font-variation-settings: 'wght' 400;
+    transition: font-variation-settings 0.3s cubic-bezier(.79,.14,.15,.86);
+}
+
+a:hover {
+    font-variation-settings: 'wght' 600;
 }
 
 code {
@@ -110,12 +115,15 @@ nav a {
     padding: 12px 24px;
     border-radius: 32px;
     transition: background-color 0.2s ease-in-out;
+    font-variation-settings: 'wght' 400;
+    transition: font-variation-settings 0.3s cubic-bezier(.79,.14,.15,.86);
     white-space: nowrap;
 }
 
 nav a:hover:not(:first-child):not(:last-child):not(.active), nav a:focus:not(:first-child):not(:last-child):not(.active) {
     background-color: var(--color-background);
     color: var(--color-accent-hover-2);
+    font-variation-settings: 'wght' 600;
     box-shadow: #00000054 0px 4px 16px 0px;
     outline: none;
 }
@@ -123,12 +131,13 @@ nav a:hover:not(:first-child):not(:last-child):not(.active), nav a:focus:not(:fi
 nav a.active {
     background-color: var(--color-accent);
     color: #efefef;
+    font-variation-settings: 'wght' 600;
     box-shadow: #00000054 0px 4px 16px 0px;
     cursor: default;
 }
 
 nav a:first-child {
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
 }
 
 nav a:first-child:hover {
@@ -249,7 +258,7 @@ nav a:last-child {
 }
 
 .title_start {
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
     padding: 0;
     color: #ffffff;
     line-height: .1;
@@ -257,7 +266,7 @@ nav a:last-child {
 }
 
 .subtitle_start {
-    font-weight: 400;
+    font-variation-settings: 'wght' 400;
     padding: 0;
     color: #ffffff;
     line-height: 4;
@@ -272,7 +281,7 @@ nav a:last-child {
 }
 
 .promo_start {
-    font-weight: 400;
+    font-variation-settings: 'wght' 400;
     font-size: 24px;
     padding: 0;
     color: #ffffff;
@@ -304,6 +313,7 @@ nav a:last-child {
     text-decoration: none;
     padding: 12px 14px;
     border-radius: 32px;
+    font-variation-settings: 'wght' 400;
     transition: background-color 0.2s ease-in-out;
     white-space: nowrap;
     cursor: pointer;
@@ -332,8 +342,8 @@ nav a:last-child {
 /* CONTENT - begin */
 
 .alert {
-    background-color: red;
-    color: var(--color-text);
+    background-color: #ff6464;
+    color: #000000;
     margin: 0;
     text-align: center;
     display: none;
@@ -344,12 +354,12 @@ nav a:last-child {
 }
 
 #alert-title {
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
     margin-bottom: -16px;
 }
 
 .alert a {
-    color: var(--color-text);
+    color: #000000;
     text-decoration: underline;
 }
 
@@ -367,7 +377,8 @@ button {
     transition: background-color 0.2s ease-in-out;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
+    transition: font-variation-settings 0.3s cubic-bezier(.79,.14,.15,.86);
     font-size: 16px;
     box-shadow: #00000054 0px 4px 16px 0px;
     margin: 4px 8px;
@@ -376,11 +387,13 @@ button {
 button:hover {
     background-color: var(--color-accent-hover);
     box-shadow: #00000054 0px 2px 8px 0px;
+    font-variation-settings: 'wght' 800;
 }
 
 button:focus {
     background-color: var(--color-accent-hover);
     box-shadow: #00000054 0px 2px 8px 0px;
+    font-variation-settings: 'wght' 800;
 }
 
 .buttons {
@@ -453,7 +466,7 @@ a:has(.project) {
 
 header, .opinions {
     background-color: var(--color-nav);
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
     font-size: 24px;
     border-radius: 32px;
     padding: 8px;
@@ -482,19 +495,19 @@ header .header-text {
 }
 
 header .header-text .price {
-    font-weight: 4600;
+    font-variation-settings: 'wght' 800;
     color: var(--color-accent);
 }
 
 header .header-text .description {
     font-size: 18px;
-    font-weight: 400;
+    font-variation-settings: 'wght' 400;
     color: var(--color-text-sec);
 }
 
 header .header-text .adnotation {
     font-size: 14px;
-    font-weight: 400;
+    font-variation-settings: 'wght' 400;
     color: var(--color-text-sec);
 }
 
@@ -562,7 +575,7 @@ header .header-image * {
     margin-top: -22px;
     padding: 16px;
     color: white;
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 50% !important;
@@ -614,13 +627,13 @@ header .header-image * {
 .opinion .opinion-text {
     font-style: italic;
     font-size: 18px;
-    font-weight: 400;
+    font-variation-settings: 'wght' 400;
     color: var(--color-text-sec);
     text-align: center;
 }
 
 .opinion .opinion-author {
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
     font-size: 16px;
     color: var(--color-text);
     margin-top: 8px;
@@ -664,15 +677,9 @@ footer {
     cursor: pointer;
     padding: 4px 10px;
     background-color: var(--color-nav-support);
-    transition: background-color 0.2s ease-in-out;
-}
-
-.footerSocial:hover, .footerLanguage:hover {
-    box-shadow: #00000054 0px 2px 8px 0px;
 }
 
 .footerSocial:focus, .footerLanguage:focus {
-    box-shadow: #00000054 0px 2px 8px 0px;
     background-color: var(--color-accent);
     color: var(--color-nav);
 }
@@ -694,7 +701,7 @@ footer {
 }
 
 .verified-text {
-    font-weight: bold;
+    font-variation-settings: 'wght' 700;
     color: var(--color-accent-2);
     font-size: 16px;
     margin-left: 8px;
@@ -738,6 +745,7 @@ footer {
 
 .grid-item:hover {
     background-color: var(--color-accent-hover);
+    color: #ffffff;
     box-shadow: #00000054 0px 2px 16px 0px;
 }
 
