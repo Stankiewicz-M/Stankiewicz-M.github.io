@@ -362,3 +362,8 @@ v. 24092
 - Fixed grid colors on the 'about.html' page
 - Fixed the text on the 'about.html' page
 - Removed font support for older browsers
+
+[2024.10.23]
+v. 24101
+- Marked the 'Hi Notch!' project as discontinued
+- Replaced previews of all discontinued projects with a new graphics
