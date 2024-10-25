@@ -367,3 +367,7 @@ v. 24092
 v. 24101
 - Marked the 'Hi Notch!' project as discontinued
 - Replaced previews of all discontinued projects with a new graphics
+
+[2024.10.25]
+v. 24102
+- Fixed a typo
