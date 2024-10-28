@@ -371,3 +371,7 @@ v. 24101
 [2024.10.25]
 v. 24102
 - Fixed a typo
+
+[2024.10.28]
+v. 24103
+- Replaced Open Graph graphics with new ones
