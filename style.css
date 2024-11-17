@@ -287,10 +287,6 @@ nav a:last-child {
     color: #ffffff;
 }
 
-.verify {
-    display: none;
-}
-
 .changeLanguageStart {
     display: flex;
     position: fixed;

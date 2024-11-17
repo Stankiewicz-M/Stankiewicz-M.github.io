@@ -375,3 +375,10 @@ v. 24102
 [2024.10.28]
 v. 24103
 - Replaced Open Graph graphics with new ones
+
+[2024.11.17]
+v. 24111
+- Added Bluesky to 'contact.html'
+- Added redirection to English version of the website if the user's browser has JS disabled
+- Changed Fediverse verification method
+- Removed Fediverse verification from 'new-domain.html'
