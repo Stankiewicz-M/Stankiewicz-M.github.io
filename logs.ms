@@ -382,3 +382,7 @@ v. 24111
 - Added redirection to English version of the website if the user's browser has JS disabled
 - Changed Fediverse verification method
 - Removed Fediverse verification from 'new-domain.html'
+
+[2025.01.06]
+v. 25011
+- Added Fosstodon verification to 'index.html'
