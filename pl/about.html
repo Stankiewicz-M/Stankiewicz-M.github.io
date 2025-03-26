@@ -40,7 +40,7 @@
         <br>
         <div class="aboutImage" id="aboutImage"></div>
         <br>
-        <h2 class="subtitle" id="aboutSubtitle">Nazywam się Michał Stankiewicz i mam <span id="age">JSage</span> lat.</h2>
+        <h2 class="subtitle" id="aboutSubtitle">Nazywam się Michał Stankiewicz i mam <span id="age">$age</span> <span id="age-word">$age-word</span>.</h2>
         <p id="aboutDescription1">Jestem studentem <a href="https://www.wsb-nlu.edu.pl/pl/informatyka">Wyższej Szkoły Biznesu - National Louis University w Nowym Sączu</a> na Wydziale Nauk Społecznych i Informatyki; specjalizacja "Analityk Cyberbezpieczeństwa". Docelowo chciałbym zajmować się administracją systemami informatycznymi oraz weryfikacją dostępności oprogramowania pod kątem osób z niepełnosprawnościami.</p>
         <p id="aboutDescription2">Prywatnie interesuję się grami planszowymi i komputerowymi, grafiką komputerową oraz nowoczesnymi technologiami, takimi jak inteligentny dom. Lubię też projektować interfejsy użytkownika w aplikacjach oraz systemach operacyjnych.</p>
         <br>
@@ -70,20 +70,32 @@
     <script src="../script.js"></script>
     <script>
         function calculateAge() {
-        var birthDate = new Date('2003-03-18');
-        var currentDate = new Date();
-        var age = currentDate.getFullYear() - birthDate.getFullYear();
-        var m = currentDate.getMonth() - birthDate.getMonth();
+            var birthDate = new Date('2003-03-18');
+            var currentDate = new Date();
+            var age = currentDate.getFullYear() - birthDate.getFullYear();
+            var m = currentDate.getMonth() - birthDate.getMonth();
 
-        if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
-            age--;
+            if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            return age;
         }
 
-        return age;
+        function ageWord() {
+            document.getElementById('age').innerText = calculateAge();
+            if (document.getElementById('age-word')) {
+                if (calculateAge() % 10 === 2 || calculateAge() % 10 === 3 || calculateAge() % 10 === 4) {
+                    document.getElementById('age-word').innerText = 'lata';
+                } else {
+                    document.getElementById('age-word').innerText = 'lat';
+                }
+            }
         }
 
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('age').innerText = calculateAge();
+            ageWord();
         });
     </script>
 </body>

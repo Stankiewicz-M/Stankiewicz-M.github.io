@@ -386,3 +386,9 @@ v. 24111
 [2025.01.06]
 v. 25011
 - Added Fosstodon verification to 'index.html'
+
+[2025.03.26]
+v. 25031
+- Added script for the word 'lat/lata' in the Polish version of the 'about.html' page
+- Hidden domain change alert
+- Removed 'Back' buttons from projects
