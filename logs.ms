@@ -392,3 +392,7 @@ v. 25031
 - Added script for the word 'lat/lata' in the Polish version of the 'about.html' page
 - Hidden domain change alert
 - Removed 'Back' buttons from projects
+
+[2025.09.24]
+v. 25091
+- Changed default Mastodon link to mastodon.com.pl
