@@ -261,7 +261,6 @@ nav a:last-child {
     font-variation-settings: 'wght' 700;
     padding: 0;
     color: #ffffff;
-    line-height: .1;
     text-align: center;
 }
 
@@ -272,10 +271,9 @@ nav a:last-child {
     line-height: 4;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 512px) {
     .title_start {
         font-size: 24px;
-        line-height: unset;
     }
     
 }
@@ -515,7 +513,7 @@ header .header-text .adnotation {
 
 @media screen and (max-width: 770px) {
     .content {
-        padding: 1px 16px 16px 16px;
+        padding: 16px 16px 16px 16px;
     }
     button {
         width: 100%;
